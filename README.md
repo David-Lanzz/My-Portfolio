@@ -1,10 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Microverse README Template</b></h3>
 
 </div>
@@ -34,8 +29,7 @@
 
 # 📖 [MY-PROTFOLIO] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
+> 
 **MY-PORTFOLIO** is a project i am working on to showcase my different skills and knowlege in programming languages and also all other projects i have worked on in a case where i need to apply for a job or present my stats to an individual or company.
 
 ## 🛠 Built With <a name="built-with">Visual Studio Code and Github</a>
@@ -60,7 +54,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[Fresh quality content]**
 - **[Speed and responsive]**
@@ -79,8 +72,6 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > All necessary files about me and my work are in the portfolio so run it and check through for any information you might need
-To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -143,7 +134,6 @@ githack
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[A project menu]**
 - [ ] **[A skills menu]**
