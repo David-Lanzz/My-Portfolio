@@ -172,9 +172,9 @@ Add at least 2 questions new developers would ask when they decide to use your p
 
 - **How did you get the linters to work for the html and CSS**
 
-  - CD into the project directory and run the following commands:
+  - Move into the project directory, copy and run the following commands:
 
-  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+  "npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x"
 
   then:
 npx stylelint "**/*.{css,scss}" to test for CSS
