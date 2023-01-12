@@ -168,7 +168,7 @@ I would like to thank myself for putting in all this hardwork and a friend i met
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Add at least 2 questions new developers would ask when they decide to use your project.
+## FAQ <a name="FAQ"></a>
 
 - **How did you get the linters to work for the html and CSS**
 
