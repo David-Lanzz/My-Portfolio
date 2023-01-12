@@ -23,6 +23,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [FAQ]
 - [📝 License](#license)
 
 
@@ -164,6 +165,24 @@ Feel free to check the [issues page](../../issues/).
 
 > 
 I would like to thank myself for putting in all this hardwork and a friend i met in microverse, His name is Priest. He gave me tips on how to use figma.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **How did you get the linters to work for the html and CSS**
+
+  - CD into the project directory and run the following commands:
+
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+  then:
+npx stylelint "**/*.{css,scss}" to test for CSS
+and npx hint . for HTML
+
+- **How did you use the background image in figma**
+
+  - Just scroll to where you have the background, Click on it, Check the left toolbar for the export button, download the image and add it to your project locally.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
