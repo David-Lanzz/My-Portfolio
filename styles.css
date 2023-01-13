@@ -172,6 +172,13 @@ h1 {
   gap: 7px;
 }
 
+.langInfo ul {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 .techstack div ul {
   margin-right: 17%;
   display: flex;
@@ -291,4 +298,128 @@ h1 {
   color: #396df2;
   border: solid 1px;
   border-radius: 0.5rem;
+}
+
+.aboutme {
+  min-height: calc(100vh);
+  background-size: 100%;
+  padding: 114px 24px;
+  border-top-right-radius: 5rem;
+  background-color: #fff;
+  margin-top: 8rem;
+  display: grid;
+  grid-template-rows: 3fr 3fr 1fr;
+}
+
+.aboutInfo {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 12px;
+}
+
+.aboutInfo h2 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.aboutInfo p {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.aboutInfo h3 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.get {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  border: solid 1px;
+  width: 150px;
+  height: 40px;
+  border-radius: 0.5rem;
+}
+
+.langInfo {
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+}
+
+.langInfo h3 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  margin-left: 13px;
+}
+
+.pLangs {
+  background: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 17%;
+  height: 60%;
+  border-radius: 50%;
+  border: solid white 1px;
+  margin-left: 12px;
+}
+
+.pLangs h2 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #253858;
+  margin-left: 1rem;
+}
+
+.frameInfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.frameInfo h2 {
+  border-bottom: solid 1px #dfe1e6;
+  padding: 18px 0 18px 0;
 }
