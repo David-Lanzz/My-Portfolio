@@ -8,6 +8,9 @@ body {
   background-color: #e5e5e5;
 }
 
+section {
+  margin-bottom: 10rem;
+}
 a {
   text-decoration: none;
 }
@@ -95,4 +98,75 @@ h1 {
   width: 10rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.works {
+  padding: 0 15px;
+ display: grid;
+ align-items: center;
+}
+.projects {
+  box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 12px;
+gap: 12px;
+width: calc(327px);
+height: 552px;
+background: #FFFFFF;
+border: 1px solid #DFE1E6;
+border-radius: 16px;
+}
+.img {
+  width: 295px;
+height: 220px;
+border: solid 1px;
+background: url(blog_drbl_4x.png);
+border-radius: 8px;
+}
+.profilesInfo {
+  width: 295px;
+  height: calc(552px - 220px);
+  border: solid 1px;
+  background: url(blog_drbl_4x.png);
+  display: grid;
+  grid-template-rows: 36px 50px auto 36px auto;
+  gap: 10px;
+}
+
+.profilesInfo li {
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+}
+.techstack {
+  justify-content: space-around;
+  margin-right: 20%;
+}
+.profilesInfo h2{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+}
+.profilesInfo h3 {
+  width: 55px;
+height: 16px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+color: #344563;
+}
+.profilesInfo p {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #344563;
 }
