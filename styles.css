@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 nav {
   height: 48px;
   padding: 0 24px;
@@ -28,17 +32,10 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-
-  /* identical to box height, or 111% */
-
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* Primary/B400 */
   color: #6070ff;
-
-  /* Inside auto layout */
 }
 
 .menu {
