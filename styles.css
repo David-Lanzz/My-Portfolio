@@ -358,14 +358,14 @@ h1 {
   letter-spacing: 0.03em;
   color: #396df2;
   border: solid 1px;
-  width: 150px;
-  height: 40px;
+  width: 160px;
+  height: 50px;
   border-radius: 0.5rem;
 }
 
 .langInfo {
   display: grid;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .langInfo h3 {
@@ -377,7 +377,6 @@ h1 {
   display: flex;
   align-items: center;
   color: #000;
-  margin-left: 13px;
 }
 
 .pLangs {
@@ -389,7 +388,7 @@ h1 {
 
 .image {
   width: 17%;
-  height: 60%;
+  height: 75%;
   border-radius: 50%;
   border: solid white 1px;
   margin-left: 12px;
@@ -405,21 +404,68 @@ h1 {
   align-items: center;
   color: #253858;
   margin-left: 1rem;
+  margin-right: auto;
+}
+
+.pLangs p {
+  margin-right: 1rem;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-size: 1rem;
 }
 
 .frameInfo {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
-}
-
-.frameInfo h2 {
   border-bottom: solid 1px #dfe1e6;
   padding: 18px 0 18px 0;
+  display: flex;
+}
+
+.frameInfo p {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.markup,
+.cascade {
+  margin-top: 0.7rem;
+}
+
+.v {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.cascade {
+  height: 4rem;
+}
+
+.buttons:disabled {
+  background-color: white;
+  color: #5e6c84;
+}
+
+.buttons:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #dfe1e6;
+}
+
+.buttons:active {
+  background: #2230d2;
+  border-radius: 8px;
+  color: white;
+}
+
+.buttons:enabled {
+  color: #396df2;
+  border: solid 1px;
+  background-color: white;
 }
