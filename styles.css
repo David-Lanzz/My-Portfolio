@@ -469,3 +469,111 @@ h1 {
   border: solid 1px;
   background-color: white;
 }
+
+.contact-form {
+  padding: 114px 24px;
+  background-image: url(./images/contact\ form\ shapes-mobile@2x.png);
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: 63% 83%;
+  background-position: right 30px;
+  border-top-left-radius: 5rem;
+  background-color: #6070ff;
+  margin-top: -4rem;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.cm h2 {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.cm p {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form ul li {
+  margin: 20px 0;
+}
+#name {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  width: 100%;
+}
+
+#email {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  width: 100%;
+}
+
+textarea {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  height: 170px;
+}
+
+#submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  position: absolute;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+
+
+
