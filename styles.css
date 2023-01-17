@@ -509,6 +509,7 @@ h1 {
 form ul li {
   margin: 20px 0;
 }
+
 #name {
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
@@ -573,7 +574,3 @@ textarea {
   letter-spacing: 0.03em;
   color: #6070ff;
 }
-
-
-
-
