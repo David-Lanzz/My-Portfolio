@@ -598,8 +598,8 @@ textarea {
   .works {
     display: flex;
     flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .projects {
@@ -655,7 +655,6 @@ textarea {
 
   .aboutme {
     display: grid;
-
     grid-template-columns: 40% 60%;
     grid-template-rows: 3fr 2fr;
     padding: 0 10%;
