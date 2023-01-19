@@ -61,7 +61,7 @@
 
 >
 
-- [Live Demo Link](https://rawcdn.githack.com/David-Lanzz/My-Portfolio/7945f1e5cf97e8105079c6209b683baa41c1990b/index.html)
+- [Live Demo Link](https://david-lanzz.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
