@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 [MY-PROTFOLIO] <a name="about-project"></a>
+# 📖 [MY-PORTFOLIO] <a name="about-project"></a>
 
 > 
 **MY-PORTFOLIO** is a project i am working on to showcase my different skills and knowlege in programming languages and also all other projects i have worked on in a case where i need to apply for a job or present my stats to an individual or company.
