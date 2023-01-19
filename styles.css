@@ -655,7 +655,7 @@ textarea {
 
   .aboutme {
     display: grid;
-    grid-template-rows: 3fr 3fr;
+    grid-template-rows: 4fr 6fr;
     grid-template-columns: 50% 50%;
     padding: 0 10%;
   }
