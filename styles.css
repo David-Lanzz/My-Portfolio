@@ -366,8 +366,8 @@ h1 {
 }
 
 .image {
-  width: 17%;
-  height: 75%;
+  width: 20%;
+  height: 100%;
   border-radius: 50%;
   border: solid white 1px;
   margin-left: 12px;
@@ -404,6 +404,10 @@ h1 {
 .frameInfo p {
   margin-left: auto;
   margin-right: 1rem;
+}
+
+.javaScript {
+  margin-top: 0.7rem;
 }
 
 .markup,
