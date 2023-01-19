@@ -714,6 +714,9 @@ textarea {
     background-position: center 40%;
     padding: 15% 30% 15% 30%;
   }
+  #langs {
+    margin-bottom: 2rem;
+  }
 
   #submit {
     margin-left: 31%;
