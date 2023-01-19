@@ -4,10 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
 }
 
 body {
   background-color: #e5e5e5;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
 }
 
 a {
@@ -25,11 +27,14 @@ nav {
   align-items: center;
   background: #fff;
 }
+.lang ul {
+  display: flex;
+  gap: 0.5rem;
+}
 
 .logo {
   height: 20px;
   margin-right: auto;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -52,6 +57,9 @@ nav {
   border-radius: 10%;
   background-color: #6070ff;
 }
+.menu ul {
+  display: none;
+}
 
 .main-section {
   height: calc(100vh - 48px);
@@ -65,7 +73,6 @@ nav {
 }
 
 h1 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -74,7 +81,6 @@ h1 {
 }
 
 .main-section p {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -136,7 +142,6 @@ h1 {
 }
 
 .tonic {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -147,7 +152,6 @@ h1 {
 .mps {
   display: flex;
   align-items: center;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -162,34 +166,23 @@ h1 {
   width: 100%;
 }
 
-.lang ul {
-  display: flex;
-  height: 100%;
-  width: 70%;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 5%;
-  gap: 7px;
-}
-
-.langInfo ul {
+.langInfo {
   display: grid;
   grid-template-rows: auto auto auto;
   gap: 1rem;
-  margin-top: 2rem;
+  
 }
 
 .techstack div ul {
   margin-right: 17%;
   display: flex;
   height: 100%;
-  width: 70%;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
 }
 
 .canopy {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -198,7 +191,6 @@ h1 {
 }
 
 .bed {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -208,7 +200,6 @@ h1 {
 }
 
 .year {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -220,7 +211,6 @@ h1 {
 .aboutProject {
   width: 295px;
   height: 76px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -237,13 +227,15 @@ h1 {
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+}
+.ruby {
+  display: none;
 }
 
 .css {
@@ -253,7 +245,6 @@ h1 {
   padding: 4px 12px;
   width: 45px;
   height: 24px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -271,7 +262,6 @@ h1 {
   padding: 4px 12px;
   width: 89px;
   height: 24px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -285,7 +275,6 @@ h1 {
 .view a {
   width: 150px;
   height: 40px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   justify-content: center;
@@ -301,24 +290,22 @@ h1 {
 }
 
 .aboutme {
-  min-height: calc(100vh);
+  min-height: 100vh;
   background-size: 100%;
   padding: 114px 24px;
   border-top-right-radius: 5rem;
   background-color: #fff;
   margin-top: 8rem;
-  display: grid;
-  grid-template-rows: 3fr 3fr 1fr;
 }
 
 .aboutInfo {
-  display: grid;
-  grid-template-rows: auto auto auto auto auto;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .aboutInfo h2 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -329,7 +316,6 @@ h1 {
 }
 
 .aboutInfo p {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -338,16 +324,15 @@ h1 {
 }
 
 .aboutInfo h3 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+ 
 }
 
 .get {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -365,25 +350,26 @@ h1 {
 
 .langInfo {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .langInfo h3 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
   color: #000;
 }
+
+
 
 .pLangs {
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
   align-items: center;
+  
 }
 
 .image {
@@ -395,7 +381,6 @@ h1 {
 }
 
 .pLangs h2 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -409,19 +394,17 @@ h1 {
 
 .pLangs p {
   margin-right: 1rem;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-size: 1rem;
 }
 
 .frameInfo {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
   border-bottom: solid 1px #dfe1e6;
-  padding: 18px 0 18px 0;
+  padding: 10px 0 10px 0;
   display: flex;
 }
 
@@ -464,6 +447,7 @@ h1 {
   color: white;
 }
 
+
 .buttons:enabled {
   color: #396df2;
   border: solid 1px;
@@ -485,7 +469,6 @@ h1 {
 }
 
 .cm h2 {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -497,7 +480,6 @@ h1 {
 }
 
 .cm p {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -511,7 +493,6 @@ form ul li {
 }
 
 #name {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -526,7 +507,6 @@ form ul li {
 }
 
 #email {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -541,7 +521,6 @@ form ul li {
 }
 
 textarea {
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -560,17 +539,178 @@ textarea {
   flex-direction: row;
   align-items: center;
   padding: 12px 16px;
-  position: absolute;
   width: 140px;
   height: 48px;
   background: #fff;
   border-radius: 8px;
-  font-family: "Poppins", Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
+}
+
+
+
+@media screen and (min-width:768px) {
+  .main-section {
+    width: cover;
+    height: 920px;
+    background-image: url(./images/Header\ bg.svg);
+    background-size: 95%;
+    background-position: center 40%;
+    padding: 25% 18% 25% 18%;
+  }
+
+  .logo {
+    margin: 25px auto 0 155px;
+  }
+
+  .menu {
+    margin: 25px 155px 0 0;
+  }
+
+  .menu div {
+    display: none;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .main-section p {
+    font-size: 17px;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+  }
+  .lc {
+    font-size: 13px;
+  }
+  .icons {
+  margin-top: -0.6rem;
+  }
+  .works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects {
+    flex-direction: row;
+    height: 22%;
+    width: 80%;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  .img {
+    width: 45%;
+    height: 100%;
+    margin-right: 2rem;
+  }
+  .projectInfo {
+    width: 55%;
+    margin-bottom: 5%;
+  }
+  .techstack div ul{
+    width: 40%;
+  }
+  .aboutProject {
+    width: 90%;
+  height: 100%;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .pointer {
+    background-image: url(./images/hand-cursor\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 87% 100%;
+  }
+  .ruby {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: auto;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  }
+  .aboutme {
+    display: grid;
+  grid-template-rows: 3fr 3fr;
+    grid-template-columns: 50% 50%;
+    padding: 0 10%;
+  }
+  .pLangs {
+    flex-direction: column;
+    width: 120px;
+    height: 100%;
+    justify-content:flex-start;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .image {
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding: 7% 0;
+    width: 3.5rem;
+    height: 4.5rem;
+    border: none;
+  }
+  .plangsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .javaScript {
+    margin-top: 0.7rem;
+  }
+  .aboutInfo {
+    margin-top: 10rem;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-bottom: -100%;
+  }
+  .langInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11rem;
+    gap: 2rem;
+  }
+  .contact-form {
+    width: cover;
+    height: 920px;
+    background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+    background-size: 92%;
+    background-position: center 40%;
+    padding: 15% 30% 15% 30%;
+  }
+  #submit {
+    margin-left: 31%;
+  }
+  .techstack div ul {
+    width: 100%;
+    margin-right: 50%;
+  }
 }
