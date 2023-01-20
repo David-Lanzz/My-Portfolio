@@ -425,6 +425,9 @@ h1 {
 .cascade {
   height: 4rem;
 }
+.buttons {
+  transition: 0.5s;
+}
 
 .buttons:disabled {
   background-color: white;
