@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 [MY-PROTFOLIO] <a name="about-project"></a>
+# 📖 [MY-PORTFOLIO] <a name="about-project"></a>
 
 > 
 **MY-PORTFOLIO** is a project i am working on to showcase my different skills and knowlege in programming languages and also all other projects i have worked on in a case where i need to apply for a job or present my stats to an individual or company.
@@ -61,7 +61,7 @@
 
 >
 
-- [Live Demo Link](https://rawcdn.githack.com/David-Lanzz/My-Portfolio/070ca8aee7a2afc779d1ec0539bf11f43e59ba6c/index.html)
+- [Live Demo Link](https://david-lanzz.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
