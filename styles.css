@@ -587,6 +587,20 @@ label {
     color: #344563;
   }
 
+  .menu a {
+    color: #344563;
+  }
+
+  .menu li:hover {
+    animation: bigger 1s forwards;
+  }
+
+  @keyframes bigger {
+    to {
+      font-size: 150%;
+    }
+  }
+
   h1 {
     font-size: 48px;
     line-height: 60px;
