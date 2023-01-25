@@ -551,6 +551,10 @@ textarea {
   color: #6070ff;
 }
 
+label {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .main-section {
     width: cover;
@@ -581,6 +585,20 @@ textarea {
     font-size: 13px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .menu a {
+    color: #344563;
+  }
+
+  .menu li:hover {
+    animation: bigger 1s forwards;
+  }
+
+  @keyframes bigger {
+    to {
+      font-size: 150%;
+    }
   }
 
   h1 {
