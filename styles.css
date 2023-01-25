@@ -551,6 +551,10 @@ textarea {
   color: #6070ff;
 }
 
+label {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .main-section {
     width: cover;

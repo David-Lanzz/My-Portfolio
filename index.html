@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lanzz's Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -41,7 +41,7 @@
     </section>
     <section class="works">
         <div class="projects">
-            <img class="img" src="./images/new.png">
+            <img class="img" src="./images/new.png" alt="Project Image">
 
             </img>
             <ul class="projectInfo">
@@ -77,7 +77,7 @@
             </ul>
         </div>
         <div class="projects reverse">
-            <img class="img" src="./images/Snapshoot Portfolio 2.png">
+            <img class="img" src="./images/Snapshoot Portfolio 2.png" alt="Project Image">
 
             </img>
             <ul class="projectInfo">
@@ -114,7 +114,7 @@
             </ul>
         </div>
         <div class="projects">
-            <img class="img" src="./images/Snapshoot Portfolio 3.png">
+            <img class="img" src="./images/Snapshoot Portfolio 3.png" alt="Project Image">
 
             </img>
             <ul class="projectInfo pointer">
@@ -151,7 +151,7 @@
             </ul>
         </div>
         <div class="projects reverse">
-            <img class="img" src="./images/Snapshoot Portfolio 4.png">
+            <img class="img" src="./images/Snapshoot Portfolio 4.png" alt="Project Image">
 
             </img>
             <ul class="projectInfo">
@@ -215,17 +215,17 @@
                 </h3>
                 <ul class="plangsContainer">
                     <li class="pLangs javaScript">
-                        <img class="image" src="./images/Ellipse 1 (1).png"></img>
+                        <img class="image" src="./images/Ellipse 1 (1).png" alt="JavaScript logo"></img>
                         <h2>JavaScript</h2>
 
                     </li>
                     <li class="pLangs markup">
-                        <img class="image" src="./images/Ellipse 1 (2).png"></img>
+                        <img class="image" src="./images/Ellipse 1 (2).png" alt="Markup logo"></img>
                         <h2>HTML</h2>
 
                     </li>
                     <li class="pLangs cascade">
-                        <img class="image" src="./images/Ellipse 1 (3).png"></img>
+                        <img class="image" src="./images/Ellipse 1 (3).png" alt="css logo"></img>
                         <h2>CSS</h2>
 
                     </li>
@@ -249,10 +249,21 @@
         </div>
         <form class="inputs" action="https://formspree.io/f/xlekdbqy" method="POST">
             <ul>
-                <li><input type="text" id="name" maxlength="30" name="name" placeholder="Enter your name" required></li>
-                <li><input type="email" id="email" placeholder="Enter your email" name="email" required></li>
-                <li><textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"
-                        maxlength="500" required></textarea></li>
+
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" maxlength="30" name="name" placeholder="Enter your name" required>
+                </li>
+
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                </li>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"
+                        maxlength="500" required></textarea>
+                </li>
                 <li><input id="submit" type="submit" value="Get in touch" class="buttons"></li>
             </ul>
         </form>
