@@ -46,11 +46,47 @@ nav {
   color: #6070ff;
 }
 
+form ul li {
+  margin: 20px 0;
+}
+
+.techstack div {
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.menuList {
+  width: 100%;
+  height: 100vh;
+  background: #6070ff;
+  padding: 4rem 2rem;
+  transition: 3s;
+  margin-top: -200vh;
+  position: absolute;
+  opacity: 95%;
+}
+
+.menuList li {
+  line-height: 2rem;
+}
+
+.menuList a {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 44px;
+  color: #fff;
+}
+
 .menu {
   background-color: white;
 }
 
 .menu div {
+  transition: 2s;
+}
+
+.menu a div {
   border: 1px solid #6070ff;
   width: 20px;
   height: 3px;
@@ -160,12 +196,6 @@ h1 {
   color: #172b4d;
   line-height: 2rem;
   margin-bottom: 1rem;
-}
-
-.techstack div {
-  height: 100%;
-  display: flex;
-  width: 100%;
 }
 
 .langInfo {
@@ -486,10 +516,6 @@ h1 {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-}
-
-form ul li {
-  margin: 20px 0;
 }
 
 #name {

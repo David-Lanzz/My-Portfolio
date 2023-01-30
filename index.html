@@ -5,18 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanzz's Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header>
+        <div class="menuList" id="menuList">
+            <ul>
+                <li><a href="#main-section" class="menuButton">Portfolio</a></li>
+                <li><a href="#aboutme" class="menuButton">About</a></li>
+                <li><a href="#contact" class="menuButton">Contact</a></li>
+            </ul>
+        </div>
         <nav>
             <a href="./index.html" class="logo">My Logo</a>
             <div class="menu">
-                <div></div>
-                <div></div>
-                <div></div>
+                <a href="#" id="menu">
+                    <div id="disappear"></div>
+                    <div id="rotate-right"></div>
+                    <div id="rotate-left"></div>
+                </a>
                 <ul>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">About</a></li>
@@ -25,7 +34,7 @@
             </div>
         </nav>
     </header>
-    <section class="main-section">
+    <section class="main-section" id="main-section">
         <h1>I'm David <br>Glad to see you!</h1>
         <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work
             and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -188,7 +197,7 @@
             </ul>
         </div>
     </section>
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
         <div class="aboutInfo">
             <h2>About <br> Myself</h2>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
@@ -241,7 +250,7 @@
 
     </section>
 
-    <section class="contact-form">
+    <section class="contact-form" id="contact">
         <div class="cm">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project
@@ -268,7 +277,7 @@
             </ul>
         </form>
     </section>
-
 </body>
+<script src="./script.js"></script>
 
 </html>
