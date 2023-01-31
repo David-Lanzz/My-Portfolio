@@ -17,15 +17,15 @@ hamburger.addEventListener('click', () => {
     rotateLeft.style.borderColor = '#fff';
     activeMenu = true;
   } else {
-    menuList.style.marginTop = '-200vh';
     disappear.style.display = 'block';
+    menuList.style.marginTop = '-200vh';
     rotateRight.style.transform = 'rotate(0deg) translateX(0%) translateY(0%)';
     rotateLeft.style.transform = 'rotate(0deg) translateX(0%)';
     rotateRight.style.backgroundColor = '#6070ff';
     rotateLeft.style.backgroundColor = '#6070ff';
     rotateRight.style.borderColor = '#6070ff';
     rotateLeft.style.borderColor = '#6070ff';
-    activeMenu = false;
+    activeMenu = false; 
   }
 });
 menuButtons.addEventListener('click', () => {
