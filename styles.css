@@ -10,6 +10,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  transition: 2s;
 }
 
 a {
@@ -44,6 +45,8 @@ nav {
   align-items: center;
   text-align: center;
   color: #6070ff;
+  z-index: 1;
+  transition: 2s;
 }
 
 form ul li {
@@ -62,9 +65,10 @@ form ul li {
   background: #6070ff;
   padding: 4rem 2rem;
   transition: 3s;
-  margin-top: -200vh;
   position: absolute;
-  opacity: 95%;
+  top: -200vh;
+  z-index: 1;
+  opacity: 85%;
 }
 
 .menuList li {
@@ -73,13 +77,13 @@ form ul li {
 
 .menuList a {
   font-weight: 600;
-  font-size: 25px;
-  line-height: 44px;
+  font-size: 35px;
+  line-height: 70px;
   color: #fff;
 }
 
 .menu {
-  background-color: white;
+  z-index: 1;
 }
 
 .menu div {
@@ -108,6 +112,7 @@ form ul li {
   border-bottom-left-radius: 5rem;
   background-color: #fff;
   margin-bottom: 8rem;
+  transition: 2s;
 }
 
 h1 {
