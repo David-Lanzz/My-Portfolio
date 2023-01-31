@@ -26,6 +26,7 @@ hamburger.addEventListener('click', () => {
   } else {
     menuList.style.top = '-200vh';
     disappear.style.display = 'block';
+    menuList.style.marginTop = '-200vh';
     rotateRight.style.transform = 'rotate(0deg) translateX(0%) translateY(0%)';
     rotateLeft.style.transform = 'rotate(0deg) translateX(0%)';
     rotateRight.style.backgroundColor = '#6070ff';
