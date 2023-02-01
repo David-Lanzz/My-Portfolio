@@ -134,8 +134,9 @@ firstBtn.addEventListener('click',function(){
     popup.style.height = '95vh'
   }
   else {
-    popup.style.width = '800px'
+   
     popup.style.height = '95vh'
+    popup.style.width = '800px'
     popup.style.marginLeft = '4%'
   }
   popupImg.style.backgroundImage = "url('./images/new.png')";
