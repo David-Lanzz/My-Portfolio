@@ -49,6 +49,108 @@ nav {
   transition: 2s;
 }
 
+.popup {
+  background-color: #fff;
+  display: grid;
+  width: 10px;
+  height: 10px;
+  grid-template-rows: 45% 55%;
+  padding: 1rem;
+  z-index: 1;
+  border-radius: 0.5rem;
+  position: fixed;
+  bottom: 200rem;
+  left: 1rem;
+  transition: 1s;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.popup-header a {
+  color: #67798E;
+
+}
+
+.popup-image {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popup-header h2 {
+  font-size: 32px;
+}
+
+.popup-stack {
+  height: 10%;
+}
+
+.popup-stack ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  height: 100%;
+}
+
+.popup-img {
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/Snapshoot\ Portfolio\ 4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+.popup img {
+  width: 100%;
+  height: 78%;
+}
+
+.popup-info {
+  display: grid;
+  grid-template-rows: 73% 8% 19%;
+}
+
+.popup-info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popuplang {
+  border-bottom: 1px solid #EBECF0;
+}
+
+.popupBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 17.5rem;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.popupBtn a {
+  border: solid 1px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #396DF2;
+  width: 8.5rem;
+  height: 40px;
+  border-radius: 0.5rem;
+}
+
 form ul li {
   margin: 20px 0;
 }
@@ -779,5 +881,62 @@ label {
   .techstack div ul {
     width: 100%;
     margin-right: 50%;
+  }
+
+  .popup {
+    grid-template-rows: 65% 35%;
+    left: 12%;
+    transition: 1s;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .popup-stack {
+    height: 10%;
+    margin-right: 60%;
+  }
+
+  .popup-img {
+    height: 560px;
+    width: 110%;
+    margin-left: -5%;
+    background-image: url('./images/Snapshoot\ Portfolio\ 3.png');
+    background-size: 90% 100%;
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+  }
+
+  .popup img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-info {
+    display: flex;
+  }
+
+  .popup-info p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .popuplang {
+    border-bottom: 1px solid #EBECF0;
+    height: 30%;
+    margin-left: 1rem;
+  }
+
+  .popuplang ul {
+    display: flex;
+    flex-basis: 33.33%;
+    height: 100%;
+    flex: calc(100%/3);
+  }
+
+  .popupBtn {
+    width: 17.5rem;
   }
 }
