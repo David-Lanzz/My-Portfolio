@@ -67,8 +67,7 @@ nav {
 }
 
 .popup-header a {
-  color: #67798E;
-
+  color: #67798e;
 }
 
 .popup-image {
@@ -103,7 +102,7 @@ nav {
 .popup-img {
   height: 100%;
   width: 100%;
-  background-image: url('./images/Snapshoot\ Portfolio\ 4.png');
+  background-image: url('fourth.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.5rem;
@@ -127,7 +126,7 @@ nav {
 }
 
 .popuplang {
-  border-bottom: 1px solid #EBECF0;
+  border-bottom: 1px solid #ebecf0;
 }
 
 .popupBtn {
@@ -145,10 +144,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #396DF2;
+  color: #396df2;
   width: 8.5rem;
   height: 40px;
   border-radius: 0.5rem;
+}
+
+.popupBtn div img {
+  width: 15px;
+  height: 15px;
+  color: #6070ff;
+  margin-left: 1rem;
 }
 
 form ul li {
@@ -207,7 +213,7 @@ form ul li {
 
 .main-section {
   height: calc(100vh - 48px);
-  background-image: url(./images/header-shapes\ mobile.png);
+  background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 114px 24px;
@@ -275,7 +281,7 @@ h1 {
   width: 300px;
   height: 220px;
   margin-bottom: 1rem;
-  background: url(blog_drbl_4x.png);
+  background: url('blog_drbl_4x.png');
   border-radius: 8px;
 }
 
@@ -593,7 +599,7 @@ h1 {
 
 .contact-form {
   padding: 114px 24px;
-  background-image: url(./images/contact\ form\ shapes-mobile@2x.png);
+  background-image: url('./images/contact\ form\ shapes-mobile@2x.png');
   min-height: 800px;
   background-repeat: no-repeat;
   background-size: 63% 83%;
@@ -692,7 +698,7 @@ label {
   .main-section {
     width: cover;
     height: 920px;
-    background-image: url(./images/Header\ bg.svg);
+    background-image: url('./images/Header\ bg.svg');
     background-size: 95%;
     background-position: center 40%;
     padding: 25% 18% 25% 18%;
@@ -790,7 +796,7 @@ label {
   }
 
   .pointer {
-    background-image: url(./images/hand-cursor\ 1.png);
+    background-image: url('./images/hand-cursor\ 1.png');
     background-repeat: no-repeat;
     background-position: 87% 100%;
   }
@@ -864,7 +870,7 @@ label {
   .contact-form {
     width: cover;
     height: 920px;
-    background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+    background-image: url('./images/contact\ form\ background\ shapes@2x.png');
     background-size: 92%;
     background-position: center 40%;
     padding: 15% 30% 15% 30%;
@@ -900,7 +906,7 @@ label {
     height: 560px;
     width: 110%;
     margin-left: -5%;
-    background-image: url('./images/Snapshoot\ Portfolio\ 3.png');
+    background-image: url('first.png');
     background-size: 90% 100%;
     background-position: center -20px;
     background-repeat: no-repeat;
@@ -924,16 +930,14 @@ label {
   }
 
   .popuplang {
-    border-bottom: 1px solid #EBECF0;
+    border-bottom: 1px solid #ebecf0;
     height: 30%;
     margin-left: 1rem;
   }
 
-  .popuplang ul {
+  .popuplang-ul {
     display: flex;
-    flex-basis: 33.33%;
     height: 100%;
-    flex: calc(100%/3);
   }
 
   .popupBtn {
