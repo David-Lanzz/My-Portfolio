@@ -10,7 +10,7 @@ const mainSection = document.querySelector('#main-section');
 const logo = document.querySelector('#logo');
 let activeMenu = false;
 
-const form = document.querySelector('#form')
+const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
 form.addEventListener('click', (e) => {
