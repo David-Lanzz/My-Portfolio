@@ -268,7 +268,7 @@ works.addEventListener('click', (e) => {
   }
 });
 
-//form validation
+// form validation
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
