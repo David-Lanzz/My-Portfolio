@@ -10,7 +10,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
-  transition: 2s;
+  transition: 1s;
 }
 
 a {
@@ -46,7 +46,7 @@ nav {
   text-align: center;
   color: #6070ff;
   z-index: 1;
-  transition: 2s;
+  transition: 1s;
 }
 
 .popup {
@@ -56,14 +56,14 @@ nav {
   height: 10px;
   grid-template-rows: 45% 55%;
   padding: 1rem;
-  z-index: 1;
+  z-index: 10;
   border-radius: 0.5rem;
-  position: fixed;
-  bottom: 200rem;
   left: 1rem;
   transition: 1s;
   gap: 1rem;
-  margin-bottom: 1rem;
+  position: fixed;
+  top: -100%;
+  margin: 0.5rem 0;
 }
 
 .popup-header a {
@@ -82,10 +82,12 @@ nav {
   height: 10%;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .popup-header h2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .popup-stack {
@@ -172,7 +174,7 @@ form ul li {
   height: 100vh;
   background: #6070ff;
   padding: 4rem 2rem;
-  transition: 3s;
+  transition: 1s;
   position: absolute;
   top: -200vh;
   z-index: 1;
@@ -195,7 +197,7 @@ form ul li {
 }
 
 .menu div {
-  transition: 2s;
+  transition: 1s;
 }
 
 .menu a div {
@@ -220,7 +222,7 @@ form ul li {
   border-bottom-left-radius: 5rem;
   background-color: #fff;
   margin-bottom: 8rem;
-  transition: 2s;
+  transition: 1s;
 }
 
 h1 {
@@ -420,9 +422,9 @@ h1 {
   width: 150px;
   height: 40px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
   justify-content: center;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   display: flex;
   align-items: center;

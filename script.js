@@ -8,8 +8,6 @@ const menuButton2 = document.querySelector('#menuButton2');
 const menuButton3 = document.querySelector('#menuButton3');
 const mainSection = document.querySelector('#main-section');
 const logo = document.querySelector('#logo');
-const popup = document.querySelector('#popup');
-const firstBtn = document.querySelector('#firstBtn');
 let activeMenu = false;
 hamburger.addEventListener('click', () => {
   if (activeMenu === false) {
@@ -80,6 +78,128 @@ menuButton3.addEventListener('click', () => {
   logo.style.color = '#6070ff';
   activeMenu = false;
 });
+const works = document.querySelector('#works');
+const projectCards = [
+  {
+    number: 1,
+    id: 'firstCard',
+    class: '"projects"',
+    hero: 'tonic',
+    name: 'Tonic',
+    description: 'A daily selection of privately personalized reads: no accounts or sign-ups required',
+    url: '"./images/new.png"',
+    technology: ['CANOPY', 'Back End Dev', '2015'],
+    techClass: ['"canopy"', '"bed"', '"year"'],
+    languages: ['html', 'Ruby', 'css', 'javaScript'],
+    languagesClass: ['html', 'ruby', 'css', 'js'],
+    live: '"https://google.com"',
+    source: '"https://google.com"',
+    buttonId: 'firstBtn',
+    popup: {
+      header: 'Tonic',
+      stack1: 'CANOPY',
+      stack2: 'Back End Dev',
+      stack3: '2015',
+      url: "'url('./images/new.png')'",
+      lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
+
+    },
+  }, {
+    number: 2,
+    id: 'secondCard',
+    class: '"projects reverse"',
+    hero: 'mps',
+    name: 'Uber Navigation',
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    url: '"./images/second.png"',
+    technology: ['UBER', 'Lead Developer', '2018'],
+    techClass: ['"canopy"', '"bed"', '"year"'],
+    languages: ['html', 'Ruby', 'css', 'javaScript'],
+    languagesClass: ['html', 'ruby', 'css', 'js'],
+    live: '"https://google.com"',
+    source: '"https://google.com"',
+    buttonId: 'secondBtn',
+    popup: {
+      url: '"url("./images/new.png")"',
+      header: 'Uber Navigation',
+      stack1: 'UBER',
+      stack2: 'Lead Developer',
+      stack3: '2018',
+      lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
+
+    },
+  }, {
+    number: 3,
+    id: 'thirdCard',
+    class: '"projects"',
+    name: 'Facebook 360',
+    hero: 'tonic',
+    description: " Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    url: '"./images/third.png"',
+    technology: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    techClass: ['"canopy"', '"bed"', '"year"'],
+    languages: ['html', 'Ruby', 'css', 'javaScript'],
+    languagesClass: ['html', 'ruby', 'css', 'js'],
+    live: '"https://google.com"',
+    source: '"https://google.com"',
+    buttonId: 'thirdBtn',
+    popup: {
+      url: '"url(./images/new.png")',
+      header: 'Facebook 360',
+      stack1: 'FACEBOOK',
+      stack2: 'Full Stack Dev',
+      stack3: '2015',
+      lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
+
+    },
+  }, {
+    number: 4,
+    id: 'fourthCard',
+    class: '"projects reverse"',
+    name: 'Multi-post Stories',
+    hero: 'mps',
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    url: '"./images/fourth.png"',
+    technology: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    techClass: ['"canopy"', '"bed"', '"year"'],
+    languages: ['html', 'Ruby', 'css', 'javaScript'],
+    languagesClass: ['html', 'ruby', 'css', 'js'],
+    live: '"https://google.com"',
+    source: '"https://google.com"',
+    buttonId: 'fourthBtn',
+    popup: {
+      url: '"url(./images/new.png")',
+      header: 'Multi-Post Stories',
+      stack1: 'FACEBOOK',
+      stack2: 'Full Stack Dev',
+      stack3: '2015',
+      lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
+
+    },
+  },
+];
+
+function createCards() {
+  let techItems = '';
+  let languages = '';
+  if (techItems === '') {
+    for (let item = 0; item < projectCards.length; item += 1) {
+      if (languages === '') {
+        for (const i in projectCards[item].technology) {
+          techItems += `<li class=${projectCards[item].techClass[i]}>${projectCards[item].technology[i]}</li>`;
+        }
+        for (const i in projectCards[item].languages) {
+          languages += `<ul class = 'popuplang-ul'><li class = ${projectCards[item].languagesClass[i]}>${projectCards[item].languages[i]}</li></ul>`;
+        }
+      }
+      const projects = `<div class= ${projectCards[item].class}id=${projectCards[item].id}>` + `<img class = 'img' src = ${projectCards[item].url}alt = 'project image'></img>` + `<ul class = 'projectInfo'><li class =${projectCards[item].hero}><h3>${projectCards[item].name}</h3></li>` + `<li class = 'techstack'><div><ul>${techItems}</ul></div></li><p class= 'aboutProject'>${projectCards[item].description}</p><li class = 'lang'><ul>${languages}</ul><li class= 'view'><a href = ` + `#${projectCards[item].id} class = 'buttons' id=${projectCards[item].buttonId}> See Project</a></li></ul></div>`;
+      techItems = '';
+      languages = '';
+      works.innerHTML += projects;
+    }
+  }
+}
+createCards();
 
 const popupHeader = document.querySelector('#popup-header');
 const popupstack1 = document.querySelector('#popupstack1');
@@ -87,154 +207,63 @@ const popupstack2 = document.querySelector('#popupstack2');
 const popupstack3 = document.querySelector('#popupstack3');
 const popuplorem = document.querySelector('#popup-lorem');
 const popupImg = document.querySelector('#popup-img');
-const secondBtn = document.querySelector('#second-button');
-const thirdBtn = document.querySelector('#third-button');
-const fourthBtn = document.querySelector('#fourth-button');
-const cancelPopup = document.querySelector('#cancel-popup');
 const firstCard = document.querySelector('#firstCard');
 const secondCard = document.querySelector('#secondCard');
 const thirdCard = document.querySelector('#thirdCard');
 const fourthCard = document.querySelector('#fourthCard');
 const aboutCard = document.querySelector('#aboutme');
 const contactCard = document.querySelector('#contact');
-const card1 = {
-  header: 'Tonic',
-  stack1: 'CANOPY',
-  stack2: 'Back End Dev',
-  stack3: '2015',
-  lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
-};
-const card2 = {
-  header: 'Uber Navigation',
-  stack1: 'UBER',
-  stack2: 'Lead Developer',
-  stack3: '2018',
-  lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
-};
-const card3 = {
-  header: 'Facebook 360',
-  stack1: 'FACEBOOK',
-  stack2: 'Full Stack Dev',
-  stack3: '2015',
-  lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
-};
-const card4 = {
-  header: 'Multi-Post Stories',
-  stack1: 'FACEBOOK',
-  stack2: 'Full Stack Dev',
-  stack3: '2015',
-  lorem: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent",
-};
+const popup = document.querySelector('#popup');
+const popuplang = document.querySelector('#popuplang');
+const liveLink = document.querySelector('#livelink');
+const sourcelink = document.querySelector('#sourcelink');
 
-firstBtn.addEventListener('click', () => {
-  if (window.screen.width < '768') {
-    popup.style.width = '327px';
-    popup.style.height = '95vh';
-  } else {
+works.addEventListener('click', (e) => {
+  let buttonId = '';
+  buttonId = e.target.id;
+  popup.style.width = '90%';
+  popup.style.height = '97vh';
+  if (window.screen.width > 768) {
     popup.style.width = '800px';
     popup.style.height = '95vh';
     popup.style.marginLeft = '4%';
   }
-  popupImg.style.backgroundImage = "url('./images/new.png')";
-  popup.style.bottom = '0';
-  popupHeader.textContent = card1.header;
-  popupstack1.textContent = card1.stack1;
-  popupstack2.textContent = card1.stack2;
-  popupstack3.textContent = card1.stack3;
-  popuplorem.textContent = card1.lorem;
-  mainSection.style.filter = 'blur(6px)';
-  firstCard.style.filter = 'blur(6px)';
-  secondCard.style.filter = 'blur(6px)';
-  thirdCard.style.filter = 'blur(6px)';
-  fourthCard.style.filter = 'blur(6px)';
-  aboutCard.style.filter = 'blur(6px)';
-  contactCard.style.filter = 'blur(6px)';
-});
-
-secondBtn.addEventListener('click', () => {
-  if (window.screen.width < '768') {
-    popup.style.width = '327px';
-    popup.style.height = '95vh';
-  } else {
-    popup.style.width = '800px';
-    popup.style.height = '95vh';
-    popup.style.marginLeft = '4%';
+  for (const i in projectCards) {
+    if (buttonId === projectCards[i].buttonId) {
+      popup.style.top = 0;
+      let languages = '';
+      for (const j in projectCards[i].languages) {
+        languages += `<li class = ${projectCards[i].languagesClass[j]}>${projectCards[i].languages[j]}</li>`;
+      }
+      popuplang.innerHTML = languages;
+      popupHeader.textContent = projectCards[i].popup.header;
+      popuplorem.textContent = projectCards[i].description;
+      popupstack1.textContent = projectCards[i].popup.stack1;
+      popupstack2.textContent = projectCards[i].popup.stack2;
+      popupstack3.textContent = projectCards[i].popup.stack3;
+      popupImg.style.backgroundImage = `url(${projectCards[i].url})`;
+      liveLink.innerHTML = `<a href=${projectCards[i].live} class="buttons">See live<img src=./images/Icon.png alt="github icon"></a>`;
+      sourcelink.innerHTML = `<a href=${projectCards[i].source} class="buttons">See Source<img src="./images/Vector22.png"
+   alt="github icon"></a>`;
+      mainSection.style.filter = 'blur(6px)';
+      firstCard.style.filter = 'blur(6px)';
+      secondCard.style.filter = 'blur(6px)';
+      thirdCard.style.filter = 'blur(6px)';
+      fourthCard.style.filter = 'blur(6px)';
+      aboutCard.style.filter = 'blur(6px)';
+      contactCard.style.filter = 'blur(6px)';
+    }
   }
-  popupImg.style.backgroundImage = "url('./images/second.png')";
-  popup.style.bottom = '0';
-  popupHeader.textContent = card2.header;
-  popupstack1.textContent = card2.stack1;
-  popupstack2.textContent = card2.stack2;
-  popupstack3.textContent = card2.stack3;
-  popuplorem.textContent = card2.lorem;
-  mainSection.style.filter = 'blur(6px)';
-  firstCard.style.filter = 'blur(6px)';
-  secondCard.style.filter = 'blur(6px)';
-  thirdCard.style.filter = 'blur(6px)';
-  fourthCard.style.filter = 'blur(6px)';
-  aboutCard.style.filter = 'blur(6px)';
-  contactCard.style.filter = 'blur(6px)';
-});
-thirdBtn.addEventListener('click', () => {
-  if (window.screen.width < '768') {
-    popup.style.width = '327px';
-    popup.style.height = '95vh';
-  } else {
-    popup.style.width = '800px';
-    popup.style.height = '95vh';
-    popup.style.marginLeft = '4%';
+  if (e.target.id === 'cancel-popup') {
+    popup.style.top = '-100rem';
+    popup.style.width = '10px';
+    popup.style.height = '10px';
+    mainSection.style.filter = 'blur(0)';
+    firstCard.style.filter = 'blur(0)';
+    secondCard.style.filter = 'blur(0)';
+    thirdCard.style.filter = 'blur(0)';
+    fourthCard.style.filter = 'blur(0)';
+    aboutCard.style.filter = 'blur(0)';
+    contactCard.style.filter = 'blur(0)';
   }
-  popupImg.style.backgroundImage = "url('./images/third.png');";
-  popup.style.bottom = '0';
-  popupHeader.textContent = card3.header;
-  popupstack1.textContent = card3.stack1;
-  popupstack2.textContent = card3.stack2;
-  popupstack3.textContent = card3.stack3;
-  popuplorem.textContent = card3.lorem;
-  mainSection.style.filter = 'blur(6px)';
-  firstCard.style.filter = 'blur(6px)';
-  secondCard.style.filter = 'blur(6px)';
-  thirdCard.style.filter = 'blur(6px)';
-  fourthCard.style.filter = 'blur(6px)';
-  aboutCard.style.filter = 'blur(6px)';
-  contactCard.style.filter = 'blur(6px)';
-});
-fourthBtn.addEventListener('click', () => {
-  if (window.screen.width < '768') {
-    popup.style.width = '327px';
-    popup.style.height = '99vh';
-  } else {
-    popup.style.width = '800px';
-    popup.style.height = '95vh';
-    popup.style.marginLeft = '4%';
-  }
-  popupImg.style.backgroundImage = "url('./images/fourth.png')";
-  popup.style.bottom = '0';
-  popupHeader.textContent = card4.header;
-  popupHeader.style.fontSize = '1.5rem';
-  popupHeader.style.lineHeight = '1.8rem';
-  popupstack1.textContent = card4.stack1;
-  popupstack2.textContent = card4.stack2;
-  popupstack3.textContent = card4.stack3;
-  popuplorem.textContent = card4.lorem;
-  mainSection.style.filter = 'blur(6px)';
-  firstCard.style.filter = 'blur(6px)';
-  secondCard.style.filter = 'blur(6px)';
-  thirdCard.style.filter = 'blur(6px)';
-  fourthCard.style.filter = 'blur(6px)';
-  aboutCard.style.filter = 'blur(6px)';
-  contactCard.style.filter = 'blur(6px)';
-});
-
-cancelPopup.addEventListener('click', () => {
-  popup.style.bottom = '200rem';
-  popup.style.width = '10px';
-  popup.style.height = '10px';
-  mainSection.style.filter = 'blur(0)';
-  firstCard.style.filter = 'blur(0)';
-  secondCard.style.filter = 'blur(0)';
-  thirdCard.style.filter = 'blur(0)';
-  fourthCard.style.filter = 'blur(0)';
-  aboutCard.style.filter = 'blur(0)';
-  contactCard.style.filter = 'blur(0)';
 });
