@@ -13,14 +13,34 @@ let activeMenu = false;
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
+const inputname = document.querySelector('#name');
+const inputObj = {
+  inputEmail: '',
+  inputName: '',
+};
+
 form.addEventListener('click', (e) => {
   if (e.target.id === 'submit' && email.value !== email.value.toLowerCase()) {
     emailError.style.visibility = 'visible';
     e.preventDefault();
   } else if (e.target.id === 'submit' && email.value === email.value.toLowerCase()) {
     emailError.style.visibility = 'hidden';
+    inputObj.inputEmail = email.value;
+    inputObj.inputName = inputname.value;
+    localStorage.clear();
+    localStorage.setItem('object', JSON.stringify(inputObj));
   }
 });
+
+window.addEventListener('load', () => {
+  let outputObj = '';
+  outputObj = JSON.parse(localStorage.getItem('object'));
+  if (inputname.value === '') {
+    inputname.value = outputObj.inputName;
+    email.value = outputObj.inputEmail;
+  }
+});
+
 hamburger.addEventListener('click', () => {
   if (activeMenu === false) {
     menuList.style.top = '0';
@@ -90,6 +110,7 @@ menuButton3.addEventListener('click', () => {
   logo.style.color = '#6070ff';
   activeMenu = false;
 });
+
 const works = document.querySelector('#works');
 const projectCards = [
   {
@@ -190,7 +211,6 @@ const projectCards = [
     },
   },
 ];
-
 function createCards() {
   let techItems = '';
   let languages = '';
