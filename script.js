@@ -13,11 +13,11 @@ let activeMenu = false;
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
-const inputname = document.querySelector('#name')
+const inputname = document.querySelector('#name');
 const inputObj = {
   inputEmail: '',
-  inputName: ''
-}
+  inputName: '',
+};
 
 form.addEventListener('click', (e) => {
   if (e.target.id === 'submit' && email.value !== email.value.toLowerCase()) {
@@ -26,21 +26,20 @@ form.addEventListener('click', (e) => {
   } else if (e.target.id === 'submit' && email.value === email.value.toLowerCase()) {
     emailError.style.visibility = 'hidden';
     inputObj.inputEmail = email.value;
-  inputObj.inputName = inputname.value;
-  localStorage.clear()
- localStorage.setItem("object",JSON.stringify(inputObj))
+    inputObj.inputName = inputname.value;
+    localStorage.clear();
+    localStorage.setItem('object', JSON.stringify(inputObj));
   }
 });
 
-window.addEventListener('load',function(){
-  let outputObj = ''
- outputObj = JSON.parse(localStorage.getItem('object'))
-  if(inputname.value === ''){
-    inputname.value = outputObj.inputName
-    email.value = outputObj.inputEmail
+window.addEventListener('load', () => {
+  let outputObj = '';
+  outputObj = JSON.parse(localStorage.getItem('object'));
+  if (inputname.value === '') {
+    inputname.value = outputObj.inputName;
+    email.value = outputObj.inputEmail;
   }
-})
-
+});
 
 hamburger.addEventListener('click', () => {
   if (activeMenu === false) {
