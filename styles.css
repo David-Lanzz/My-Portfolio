@@ -7,11 +7,6 @@
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
 }
 
-#emailError {
-  color: red;
-  visibility: hidden;
-}
-
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -699,6 +694,11 @@ textarea {
 
 label {
   display: none;
+}
+
+#emailError {
+  color: red;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
