@@ -98,10 +98,9 @@ To run the project, Click on the live Demo link
 ### Run tests
 
 To run tests, run the following command:
-
-To run tests, run the following command:
 npx stylelint "**/*.{css,scss}"
 npx hint .
+npx eslint .
 
 ### Deployment
 
