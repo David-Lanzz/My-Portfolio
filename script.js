@@ -111,6 +111,7 @@ menuButton3.addEventListener('click', () => {
   logo.style.color = '#6070ff';
   activeMenu = false;
 });
+
 const works = document.querySelector('#works');
 const projectCards = [
   {
@@ -211,7 +212,6 @@ const projectCards = [
     },
   },
 ];
-
 function createCards() {
   let techItems = '';
   let languages = '';
