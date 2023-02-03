@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
 }
-
+#emailError {
+  color: red;
+  visibility:hidden;
+}
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -258,6 +261,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .works {
   display: grid;
