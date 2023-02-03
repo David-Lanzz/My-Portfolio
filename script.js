@@ -267,3 +267,14 @@ works.addEventListener('click', (e) => {
     contactCard.style.filter = 'blur(0)';
   }
 });
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const emailError = document.querySelector('#emailError');
+form.addEventListener('submit', (e) => {
+  if (e.target.id === 'submit' && email.value !== email.value.toLowerCase()) {
+    emailError.style.visibility = 'visible';
+    e.event.preventDefault();
+  } else if (e.target.id === 'submit' && email.value === email.value.toLowerCase()) {
+    emailError.style.visibility = 'hidden';
+  }
+});
