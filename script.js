@@ -254,6 +254,7 @@ works.addEventListener('click', (e) => {
       contactCard.style.filter = 'blur(6px)';
     }
   }
+
   if (e.target.id === 'cancel-popup') {
     popup.style.top = '-100rem';
     popup.style.width = '10px';
@@ -265,10 +266,11 @@ works.addEventListener('click', (e) => {
     fourthCard.style.filter = 'blur(0)';
     aboutCard.style.filter = 'blur(0)';
     contactCard.style.filter = 'blur(0)';
+
   }
 });
 
-//form validation
+//Validate email to lowercase
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
