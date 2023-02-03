@@ -270,7 +270,7 @@ works.addEventListener('click', (e) => {
   }
 });
 
-//Validate email to lowercase
+//form validation
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
