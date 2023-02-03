@@ -266,11 +266,10 @@ works.addEventListener('click', (e) => {
     fourthCard.style.filter = 'blur(0)';
     aboutCard.style.filter = 'blur(0)';
     contactCard.style.filter = 'blur(0)';
-
   }
 });
 
-//form validation
+// form validation
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
