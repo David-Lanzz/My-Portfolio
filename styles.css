@@ -696,6 +696,11 @@ label {
   display: none;
 }
 
+#emailError {
+  color: red;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .main-section {
     width: cover;
