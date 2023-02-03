@@ -185,14 +185,14 @@ function createCards() {
   if (techItems === '') {
     for (let item = 0; item < projectCards.length; item += 1) {
       if (languages === '') {
-        for (const i in projectCards[item].technology) {
+        for (let i = 0; i < projectCards[item].technology.length; i += 1) {
           techItems += `<li class=${projectCards[item].techClass[i]}>${projectCards[item].technology[i]}</li>`;
         }
-        for (const i in projectCards[item].languages) {
+        for (let i = 0; i < projectCards[item].languages.length; i += 1) {
           languages += `<ul class = 'popuplang-ul'><li class = ${projectCards[item].languagesClass[i]}>${projectCards[item].languages[i]}</li></ul>`;
         }
       }
-      const projects = `<div class= ${projectCards[item].class}id=${projectCards[item].id}>` + `<img class = 'img' src = ${projectCards[item].url}alt = 'project image'></img>` + `<ul class = 'projectInfo'><li class =${projectCards[item].hero}><h3>${projectCards[item].name}</h3></li>` + `<li class = 'techstack'><div><ul>${techItems}</ul></div></li><p class= 'aboutProject'>${projectCards[item].description}</p><li class = 'lang'><ul>${languages}</ul><li class= 'view'><a href = ` + `#${projectCards[item].id} class = 'buttons' id=${projectCards[item].buttonId}> See Project</a></li></ul></div>`;
+      const projects = `<div class= ${projectCards[item].class}id=${projectCards[item].id}><img class = 'img' src = ${projectCards[item].url}alt = 'project image'></img><ul class = 'projectInfo'><li class =${projectCards[item].hero}><h3>${projectCards[item].name}</h3></li><li class = 'techstack'><div><ul>${techItems}</ul></div></li><p class= 'aboutProject'>${projectCards[item].description}</p><li class = 'lang'><ul>${languages}</ul><li class= 'view'><a href = #${projectCards[item].id} class = 'buttons' id=${projectCards[item].buttonId}> See Project</a></li></ul></div>`;
       techItems = '';
       languages = '';
       works.innerHTML += projects;
@@ -228,11 +228,11 @@ works.addEventListener('click', (e) => {
     popup.style.height = '95vh';
     popup.style.marginLeft = '4%';
   }
-  for (const i in projectCards) {
+  for (let i = 0; i < projectCards.length; i += 1) {
     if (buttonId === projectCards[i].buttonId) {
       popup.style.top = 0;
       let languages = '';
-      for (const j in projectCards[i].languages) {
+      for (let j = 0; j < projectCards[i].length; j += 1) {
         languages += `<li class = ${projectCards[i].languagesClass[j]}>${projectCards[i].languages[j]}</li>`;
       }
       popuplang.innerHTML = languages;
