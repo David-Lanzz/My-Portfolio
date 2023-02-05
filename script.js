@@ -159,7 +159,7 @@ const projectCards = [
     class: '"projects"',
     name: 'Facebook 360',
     hero: 'tonic',
-    description: " Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     url: '"./images/third.png"',
     technology: ['FACEBOOK', 'Full Stack Dev', '2015'],
     techClass: ['"canopy"', '"bed"', '"year"'],
@@ -255,10 +255,11 @@ works.addEventListener('click', (e) => {
       </a>`;
       popup.style.top = 0;
       let languages = '';
-      for (let j = 0; j < projectCards[i].length; j += 1) {
+      for (let j = 0; j < projectCards[i].languages.length; j += 1) {
         languages += `<li class = ${projectCards[i].languagesClass[j]}>${projectCards[i].languages[j]}</li>`;
       }
       popuplang.innerHTML = languages;
+      popuplang.style.marginTop = '-1rem';
       popuplorem.textContent = projectCards[i].description;
       popupstack1.textContent = projectCards[i].popup.stack1;
       popupstack2.textContent = projectCards[i].popup.stack2;
