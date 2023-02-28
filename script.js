@@ -114,42 +114,50 @@ const projectCards = [
     id: 'firstCard',
     class: '"projects"',
     hero: 'tonic',
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads: no accounts or sign-ups required',
-    url: '"./images/new.png"',
-    technology: ['CANOPY', 'Back End Dev', '2015'],
+    name: 'Music Festival',
+    description: `This capstone project is about a music festival in my country.
+     I created it in honor of my favorite artiste, Wizkid.`,
+    url: '"./images/mil.jpg"',
+    technology: ['CANOPY', 'Front End Dev', '2015'],
     techClass: ['"canopy"', '"bed"', '"year"'],
-    languages: ['html', 'Ruby', 'css', 'javaScript'],
-    languagesClass: ['html', 'ruby', 'css', 'js'],
-    live: '"https://google.com"',
-    source: '"https://google.com"',
+    languages: ['html', 'css', 'javaScript'],
+    languagesClass: ['html', 'css', 'js'],
+    live: '"https://david-lanzz.github.io/My-First-Capstone/"',
+    source: '"https://github.com/David-Lanzz/My-First-Capstone"',
     buttonId: 'firstBtn',
     popup: {
-      header: 'Tonic',
+      header: 'MIL Music Festival',
       stack1: 'CANOPY',
-      stack2: 'Back End Dev',
+      stack2: 'Front End Dev',
       stack3: '2015',
-      url: "'url('./images/new.png')'",
+      url: "'url('./images/mil.jpg')'",
+      description: `This capstone project is about a music festival in my country.
+     I created it in honor of my favorite artiste, Wizkid. The project has many features including of performing artiste cards
+     using javascript, speed and responsiveness on all devices and many more.To preview, use the live link below`,
     },
   }, {
     number: 2,
     id: 'secondCard',
     class: '"projects reverse"',
     hero: 'mps',
-    name: 'Uber Navigation',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    url: '"./images/second.png"',
-    technology: ['UBER', 'Lead Developer', '2018'],
+    name: 'ToDo List',
+    description: `This project is containing a ToDo list which i used to sharpen my skills in
+     JavaScript and also to learn how to use webpacks efficiently.`,
+    url: '"./images/todo.jpg"',
+    technology: ['TODO', 'Lead Developer', '2018'],
     techClass: ['"canopy"', '"bed"', '"year"'],
-    languages: ['html', 'Ruby', 'css', 'javaScript'],
+    languages: ['html', 'webpack', 'css', 'javaScript'],
     languagesClass: ['html', 'ruby', 'css', 'js'],
-    live: '"https://google.com"',
-    source: '"https://google.com"',
+    live: '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
+    source: '"https://github.com/David-Lanzz/My-ToDo-List"',
     buttonId: 'secondBtn',
     popup: {
-      url: '"url("./images/new.png")"',
-      header: 'Uber Navigation',
-      stack1: 'UBER',
+      description: `This project is containing a ToDo list which i used to sharpen my skills in
+     JavaScript and also to learn how to use webpacks efficiently. The project consists of different features 
+     including adding, editing, deleting and creating of tasks dynamically using javascript.Mtiple tasks can also be cleared at once.`,
+      url: '"url("./images/todo.jpg")"',
+      header: 'ToDo List',
+      stack1: 'TODO',
       stack2: 'Lead Developer',
       stack3: '2018',
     },
@@ -169,7 +177,7 @@ const projectCards = [
     source: '"https://google.com"',
     buttonId: 'thirdBtn',
     popup: {
-      url: '"url(./images/new.png")',
+      url: '"url(./images/third.png")',
       header: 'Facebook 360',
       stack1: 'FACEBOOK',
       stack2: 'Full Stack Dev',
@@ -191,7 +199,7 @@ const projectCards = [
     source: '"https://google.com"',
     buttonId: 'fourthBtn',
     popup: {
-      url: '"url(./images/new.png")',
+      url: '"url(./images/fourth.png")',
       header: 'Multi-Post Stories',
       stack1: 'FACEBOOK',
       stack2: 'Full Stack Dev',
@@ -260,7 +268,7 @@ works.addEventListener('click', (e) => {
       }
       popuplang.innerHTML = languages;
       popuplang.style.marginTop = '-1rem';
-      popuplorem.textContent = projectCards[i].description;
+      popuplorem.textContent = projectCards[i].popup.description;
       popupstack1.textContent = projectCards[i].popup.stack1;
       popupstack2.textContent = projectCards[i].popup.stack2;
       popupstack3.textContent = projectCards[i].popup.stack3;

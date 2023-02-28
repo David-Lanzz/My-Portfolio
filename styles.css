@@ -10,7 +10,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 a {
@@ -46,7 +46,7 @@ nav {
   text-align: center;
   color: #6070ff;
   z-index: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .popup {
@@ -59,7 +59,7 @@ nav {
   z-index: 10;
   border-radius: 0.5rem;
   left: 1rem;
-  transition: 1s;
+  transition: 0.5s;
   gap: 1rem;
   position: fixed;
   top: -100%;
@@ -180,7 +180,7 @@ header {
   height: 100vh;
   background: #6070ff;
   padding: 4rem 2rem;
-  transition: 1s;
+  transition: 0.5s;
   position: inherit;
   top: -200vh;
   z-index: 1;
@@ -203,7 +203,7 @@ header {
 }
 
 .menu div {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .menu a div {
@@ -220,7 +220,7 @@ header {
 }
 
 .main-section {
-  height: calc(100vh - 48px);
+  min-height: 100vh;
   background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -228,7 +228,7 @@ header {
   border-bottom-left-radius: 5rem;
   background-color: #fff;
   margin-bottom: 8rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 h1 {
@@ -279,7 +279,6 @@ h1 {
   padding: 16px;
   gap: 12px;
   width: 327px;
-  min-height: 580px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -878,7 +877,7 @@ label {
   .popup {
     grid-template-rows: 65% 35%;
     left: 12%;
-    transition: 1s;
+    transition: 0.5s;
     gap: 1rem;
     margin-bottom: 1rem;
   }
