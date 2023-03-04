@@ -6,6 +6,7 @@ const menuList = document.querySelector('#menuList');
 const mainSection = document.querySelector('#main-section');
 const logo = document.querySelector('#logo');
 let activeMenu = false;
+const body = document.querySelector('body');
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
@@ -252,8 +253,12 @@ works.addEventListener('click', (e) => {
   popup.style.height = '97vh';
   if (window.screen.width > 768) {
     popup.style.width = '800px';
-    popup.style.height = '95vh';
-    popup.style.marginLeft = '4%';
+    popup.style.height = '40rem';
+   // popup.style.marginTop = '20%';
+   body.style.display = 'flex'
+   body.style.flexDirection = 'column'
+   body.style.alignItems = 'center'
+   body.style.justifyContent = 'center'
   }
   for (let i = 0; i < projectCards.length; i += 1) {
     if (buttonId === projectCards[i].buttonId) {
@@ -289,6 +294,7 @@ works.addEventListener('click', (e) => {
     popup.style.top = '-100rem';
     popup.style.width = '10px';
     popup.style.height = '10px';
+    body.style.display = 'block'
     mainSection.style.filter = 'blur(0)';
     firstCard.style.filter = 'blur(0)';
     secondCard.style.filter = 'blur(0)';

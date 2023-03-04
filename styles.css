@@ -220,7 +220,7 @@ header {
 }
 
 .main-section {
-  min-height: 100vh;
+  min-height: 20rem;
   background-image: url('./images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -288,7 +288,6 @@ h1 {
   width: 300px;
   height: 220px;
   margin-bottom: 1rem;
-  background: url('blog_drbl_4x.png');
   border-radius: 8px;
 }
 
@@ -421,7 +420,7 @@ h1 {
 }
 
 .aboutme {
-  min-height: 100vh;
+  min-height: 20rem;
   background-size: 100%;
   padding: 114px 24px;
   border-top-right-radius: 5rem;
@@ -879,6 +878,7 @@ label {
     left: 12%;
     transition: 0.5s;
     gap: 1rem;
+    min-height: 10rem;
     margin-bottom: 1rem;
   }
 
@@ -891,7 +891,7 @@ label {
     height: 560px;
     width: 110%;
     margin-left: -5%;
-    background-image: url('first.png');
+    background-image: url('./images/mil.jpg');
     background-size: 90% 100%;
     background-position: center -20px;
     background-repeat: no-repeat;
