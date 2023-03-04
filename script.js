@@ -254,11 +254,11 @@ works.addEventListener('click', (e) => {
   if (window.screen.width > 768) {
     popup.style.width = '800px';
     popup.style.height = '40rem';
-   // popup.style.marginTop = '20%';
-   body.style.display = 'flex'
-   body.style.flexDirection = 'column'
-   body.style.alignItems = 'center'
-   body.style.justifyContent = 'center'
+    // popup.style.marginTop = '20%';
+    body.style.display = 'flex';
+    body.style.flexDirection = 'column';
+    body.style.alignItems = 'center';
+    body.style.justifyContent = 'center';
   }
   for (let i = 0; i < projectCards.length; i += 1) {
     if (buttonId === projectCards[i].buttonId) {
@@ -294,7 +294,7 @@ works.addEventListener('click', (e) => {
     popup.style.top = '-100rem';
     popup.style.width = '10px';
     popup.style.height = '10px';
-    body.style.display = 'block'
+    body.style.display = 'block';
     mainSection.style.filter = 'blur(0)';
     firstCard.style.filter = 'blur(0)';
     secondCard.style.filter = 'blur(0)';
