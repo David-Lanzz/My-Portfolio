@@ -80,9 +80,10 @@ nav {
   position: inherit;
   overflow-y: scroll;
   width: 90%;
-  padding-top: 1rem;
+  padding-top: 2rem;
   overflow-wrap: anywhere;
   z-index: inherit;
+  border: solid 1px #2230d2;
 }
 
 .popup {
@@ -164,7 +165,7 @@ nav {
   justify-content: space-between;
   width: 17.5rem;
   align-items: flex-end;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .popupBtn a {
