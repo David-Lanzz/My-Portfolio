@@ -39,6 +39,10 @@ nav {
   justify-content: center;
 }
 
+.show-blur{
+  filter: blur(6px);
+}
+
 .logo {
   height: 20px;
   margin-right: auto;
@@ -60,6 +64,7 @@ nav {
   position: fixed;
   left: 100%;
   min-height: 10rem;
+  z-index: 3;
 }
 
 .window-popup {
@@ -74,6 +79,7 @@ nav {
   overflow-y: scroll;
   width: 90%;
   padding-top: 1rem;
+  z-index: inherit;
 }
 
 .popup {
@@ -907,17 +913,12 @@ label {
 
   .popup-img {
     height: 560px;
-    width: 110%;
-    margin-left: -5%;
-    background-image: url('./images/mil.jpg');
-    background-size: 90% 100%;
-    background-position: center -20px;
-    background-repeat: no-repeat;
+    margin-left: 10%;
     border-radius: 0.5rem;
   }
 
   .popup img {
-    width: 100%;
+    width: 80%;
   }
 
   .popup-info {

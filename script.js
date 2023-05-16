@@ -225,6 +225,7 @@ window.addEventListener('click', (e) => {
   }
   if (target.className.includes('buttons')) {
     displayPopup(projectCards, target);
+    document.querySelector(".blur").classList.add("show-blur")
     if(window.screen.width < 768){
       document.querySelector('.popup-container').classList.add('display-popup');
     }
@@ -243,6 +244,7 @@ window.addEventListener('click', (e) => {
   if (target.id === 'cancel-popup') {
       document.querySelector('.popup-container').classList.remove('display-popup');
     document.querySelector('.popup-container').classList.remove('display-popup-desktop');
+    document.querySelector(".blur").classList.remove("show-blur")
   }
 });
 
