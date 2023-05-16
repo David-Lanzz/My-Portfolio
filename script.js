@@ -112,9 +112,8 @@ const card2 = new Cards('ToDo List', `This project is containing a ToDo list whi
 //      JavaScript and also to learn how to use webpacks efficiently.`, '"./images/todo.jpg"', ['TODO', 'Lead Developer', '2018'],
 ['"canopy"', '"bed"', '"year"'], ['html', 'webpack', 'css', 'JS'], ['html'], '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
 '"https://github.com/David-Lanzz/My-ToDo-List"', {
-  description: `This project is containing a ToDo list which i used to sharpen my skills in
-       JavaScript and also to learn how to use webpacks efficiently. The project consists of different features
-       including adding, editing, deleting and creating of tasks dynamically using javascript.Mtiple tasks can also be cleared at once.`,
+  description: `This project is containing a ToDo list which i used to sharpen my skills in JavaScript and also to learn how to use webpacks efficiently. The project consists of different features
+       including adding, editing, deleting and creating of tasks dynamically using javascript.Multiple tasks can also be cleared at once.`,
   url: './images/todo.jpg',
   header: 'ToDo List',
   stack1: 'TODO',
