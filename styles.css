@@ -39,6 +39,7 @@ nav {
 .popuplang-ul,
 .popup-justify {
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .show-blur{
