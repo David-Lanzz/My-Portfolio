@@ -96,8 +96,8 @@ class Cards {
 
 const card1 = new Cards('Music Festival', `This capstone project is about a music festival in my country.
 I created it in honor of my favorite artiste, Wizkid.`, "'./images/mil.jpg'", ['CANOPY', 'Front End Dev', '2015'],
-['"canopy"', '"bed"', '"year"'], ['html', 'css', 'javaScript'],
-['html', 'css', 'js'], '"https://david-lanzz.github.io/My-First-Capstone/"',
+['"canopy"', '"bed"', '"year"'], ['html', 'css', 'JS'],
+['html'], '"https://david-lanzz.github.io/My-First-Capstone/"',
 '"https://github.com/David-Lanzz/My-First-Capstone"', {
   header: 'MIL Music Festival',
   stack1: 'CANOPY',
@@ -110,7 +110,7 @@ I created it in honor of my favorite artiste, Wizkid.`, "'./images/mil.jpg'", ['
 });
 const card2 = new Cards('ToDo List', `This project is containing a ToDo list which i used to sharpen my skills in
 //      JavaScript and also to learn how to use webpacks efficiently.`, '"./images/todo.jpg"', ['TODO', 'Lead Developer', '2018'],
-['"canopy"', '"bed"', '"year"'], ['html', 'webpack', 'css', 'javaScript'], ['html', 'ruby', 'css', 'js'], '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
+['"canopy"', '"bed"', '"year"'], ['html', 'webpack', 'css', 'JS'], ['html'], '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
 '"https://github.com/David-Lanzz/My-ToDo-List"', {
   description: `This project is containing a ToDo list which i used to sharpen my skills in
        JavaScript and also to learn how to use webpacks efficiently. The project consists of different features
@@ -144,7 +144,7 @@ function createCards() {
           techItems += `<li class=${projectCards[item].techClass[i]}>${projectCards[item].technology[i]}</li>`;
         }
         for (let i = 0; i < projectCards[item].languages.length; i += 1) {
-          languages += `<ul class = 'popuplang-ul'><li class = ${projectCards[item].languagesClass[i]}>${projectCards[item].languages[i]}</li></ul>`;
+          languages += `<ul class = 'popuplang-ul'><li class = "html">${projectCards[item].languages[i]}</li></ul>`;
         }
       }
       const projects = `<div class= ${projectCards[item].classes}id=${projectCards[item].id}><img class = 'img' src = ${projectCards[item].url}alt = 'project image'></img><ul class = 'projectInfo'><li class =${projectCards[item].hero}><h3>${projectCards[item].name}</h3></li><li class = 'techstack'><div>
