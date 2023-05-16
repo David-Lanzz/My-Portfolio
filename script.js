@@ -80,14 +80,13 @@ const works = document.querySelector('#works');
 
 class Cards {
   constructor(name, description, url, technology, techClass,
-     languages, languagesClass, live, source, popup) {
+     languages, live, source, popup) {
     this.name = name;
     this.description = description;
     this.url = url;
     this.technology = technology;
     this.techClass = techClass;
     this.languages = languages;
-    this.languagesClass = languagesClass;
     this.live = live;
     this.source = source;
     this.popup = popup;
@@ -96,8 +95,7 @@ class Cards {
 
 const card1 = new Cards('Music Festival', `This capstone project is about a music festival in my country.
 I created it in honor of my favorite artiste, Wizkid.`, "'./images/mil.jpg'", ['CANOPY', 'Front End Dev', '2015'],
-['"canopy"', '"bed"', '"year"'], ['html', 'css', 'JS'],
-['html'], '"https://david-lanzz.github.io/My-First-Capstone/"',
+['"canopy"', '"bed"', '"year"'], ['html', 'css', 'JS'], '"https://david-lanzz.github.io/My-First-Capstone/"',
 '"https://github.com/David-Lanzz/My-First-Capstone"', {
   header: 'MIL Music Festival',
   stack1: 'CANOPY',
@@ -109,8 +107,8 @@ I created it in honor of my favorite artiste, Wizkid.`, "'./images/mil.jpg'", ['
  using javascript, speed and responsiveness on all devices and many more.To preview, use the live link below`,
 });
 const card2 = new Cards('ToDo List', `This project is containing a ToDo list which i used to sharpen my skills in
-//      JavaScript and also to learn how to use webpacks efficiently.`, '"./images/todo.jpg"', ['TODO', 'Lead Developer', '2018'],
-['"canopy"', '"bed"', '"year"'], ['html', 'webpack', 'css', 'JS'], ['html'], '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
+ JavaScript and also to learn how to use webpacks efficiently.`, '"./images/todo.jpg"', ['TODO', 'Lead Developer', '2018'],
+['"canopy"', '"bed"', '"year"'], ['html', 'webpack', 'css', 'JS'], '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
 '"https://github.com/David-Lanzz/My-ToDo-List"', {
   description: `This project is containing a ToDo list which i used to sharpen my skills in JavaScript and also to learn how to use webpacks efficiently. The project consists of different features
        including adding, editing, deleting and creating of tasks dynamically using javascript.Multiple tasks can also be cleared at once.`,
