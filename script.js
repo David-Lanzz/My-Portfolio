@@ -225,7 +225,10 @@ window.addEventListener('click', (e) => {
   }
   if (target.className.includes('buttons')) {
     displayPopup(projectCards, target);
-    document.querySelector('.popup-container').classList.add('display-popup');
+    if(window.screen.width < 768){
+      document.querySelector('.popup-container').classList.add('display-popup');
+    }
+    document.querySelector('.popup-container').classList.add('display-popup-desktop');
   }
   if (target.id === 'submit' && email.value !== email.value.toLowerCase()) {
     emailError.style.visibility = 'visible';
@@ -238,7 +241,8 @@ window.addEventListener('click', (e) => {
     localStorage.setItem('object', JSON.stringify(inputObj));
   }
   if (target.id === 'cancel-popup') {
-    document.querySelector('.popup-container').classList.remove('display-popup');
+      document.querySelector('.popup-container').classList.remove('display-popup');
+    document.querySelector('.popup-container').classList.remove('display-popup-desktop');
   }
 });
 
