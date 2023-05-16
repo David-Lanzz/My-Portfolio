@@ -28,7 +28,9 @@ nav {
   align-items: center;
   background: #fff;
 }
-
+.no-overflow {
+  overflow: hidden;
+}
 .lang ul {
   display: flex;
   gap: 0.5rem;

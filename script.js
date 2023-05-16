@@ -226,10 +226,13 @@ window.addEventListener('click', (e) => {
   if (target.className.includes('buttons')) {
     displayPopup(projectCards, target);
     document.querySelector(".blur").classList.add("show-blur")
+    document.querySelector(".blur").classList.add("no-overflow")
     if(window.screen.width < 768){
       document.querySelector('.popup-container').classList.add('display-popup');
     }
-    document.querySelector('.popup-container').classList.add('display-popup-desktop');
+    else {
+      document.querySelector('.popup-container').classList.add('display-popup-desktop');
+    }
   }
   if (target.id === 'submit' && email.value !== email.value.toLowerCase()) {
     emailError.style.visibility = 'visible';
