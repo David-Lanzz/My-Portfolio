@@ -28,9 +28,11 @@ nav {
   align-items: center;
   background: #fff;
 }
+
 .no-overflow {
   overflow: hidden;
 }
+
 .lang ul {
   display: flex;
   gap: 0.2rem;
@@ -41,6 +43,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .logoimg {
   width: 10rem;
   height: 3rem;
@@ -49,7 +52,7 @@ nav {
   left: 0;
 }
 
-.show-blur{
+.show-blur {
   filter: blur(6px);
 }
 
@@ -101,6 +104,7 @@ nav {
 .display-popup {
   left: 4%;
 }
+
 .display-popup-desktop {
   left: 14%;
 }
@@ -585,13 +589,13 @@ h1 {
   font-weight: 700;
   font-size: 0.9rem;
 }
+
 .all-btn {
   width: 100%;
   display: flex;
   padding-top: 1rem;
   justify-content: center;
 }
-
 
 .cascade {
   height: 4rem;
@@ -605,6 +609,7 @@ h1 {
   background-color: white;
   color: #5e6c84;
 }
+
 .thinline {
   border-bottom: solid 1px #9a9a9a;
   margin-top: 1rem;
@@ -719,22 +724,24 @@ label {
 }
 
 .plangsContainer {
-    position: relative;
-   right: 0;
-  }
-  .move-away {
-    position: fixed;
-    right: 500%;
-  }
-  .all-cards {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: -2rem;
-  }
+  position: relative;
+  right: 0;
+}
 
-@media screen and (min-width: 700px) {
+.move-away {
+  position: fixed;
+  right: 500%;
+}
+
+.all-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+@media screen and (min-width: 600px) {
   .main-section {
     width: cover;
     height: 920px;
@@ -806,9 +813,11 @@ label {
     justify-content: center;
     align-items: center;
   }
+
   .logoimg {
     left: 155px;
   }
+
   .projects {
     flex-direction: row;
     height: 22%;
@@ -899,6 +908,7 @@ label {
     position: relative;
     right: 0;
   }
+
   .move-away {
     position: fixed;
     right: 500%;
@@ -950,9 +960,11 @@ label {
     gap: 1rem;
     margin-bottom: 1rem;
   }
-.window-popup {
-  width: 70%;
-}
+
+  .window-popup {
+    width: 70%;
+  }
+
   .popup-stack {
     height: 10%;
     margin-right: 30%;
