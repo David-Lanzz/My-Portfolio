@@ -261,7 +261,7 @@ projectCards.map((card, index) => {
   }
 });
 
-const default_loop_value = 4;
+let default_loop_value = 4;
 
 function createCards() {
   let techItems = '';
@@ -278,7 +278,7 @@ function createCards() {
       }
       const projects = `<div class= "${projectCards[item].classes}" id=${projectCards[item].id}><img class = 'img' src = ${projectCards[item].url}alt = 'project image'></img><ul class = 'projectInfo'><li class =${projectCards[item].hero}><h3>${projectCards[item].name}</h3></li><li class = 'techstack'><div>
       <ul>${techItems}</ul></div></li><p class= 'aboutProject'>${projectCards[item].description}</p><li class = 'lang'>
-      <ul>${languages}</ul><li class= 'view'><a href = #${projectCards[item].id} class = 'buttons' id=${projectCards[item].buttonId}>
+      <ul>${languages}</ul><li class= 'view'><a href = #${projectCards[item].id} class = 'buttons project-buttons' id=${projectCards[item].buttonId}>
        See Project</a></li></ul></div>`;
       techItems = '';
       languages = '';
@@ -344,6 +344,8 @@ ${element.languages.map((language) => `<li class="html">${language}</li>`)}
   });
 };
 
+displayAll = false
+
 window.addEventListener('click', (e) => {
   const { target } = e;
   if (
@@ -364,7 +366,7 @@ window.addEventListener('click', (e) => {
     document.querySelector('.frameworkContainer').classList.toggle('move-away');
   }
 
-  if (target.className.includes('buttons')) {
+  if (target.className.includes('project-buttons')) {
     displayPopup(projectCards, target);
     document.querySelector('.blur').classList.add('show-blur');
     document.querySelector('body').classList.add('no-overflow');
@@ -398,5 +400,16 @@ window.addEventListener('click', (e) => {
       .classList.remove('display-popup-desktop');
     document.querySelector('.blur').classList.remove('show-blur');
     document.querySelector('body').classList.remove('no-overflow');
+  }
+  if(target.id === "see-all"){
+    e.preventDefault()
+    works.innerHTML = ""
+    if(!displayAll){
+      e.target.innerHTML = "See Less"
+      default_loop_value = projectCards.length
+      createCards()
+      displayAll = true
+      e.target.style.display = "none"
+    }
   }
 });

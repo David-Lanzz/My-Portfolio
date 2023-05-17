@@ -726,6 +726,13 @@ label {
     position: fixed;
     right: 500%;
   }
+  .all-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
 
 @media screen and (min-width: 700px) {
   .main-section {
