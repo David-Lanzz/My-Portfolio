@@ -41,6 +41,13 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
 }
+.logoimg {
+  width: 10rem;
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .show-blur{
   filter: blur(6px);
@@ -773,7 +780,9 @@ label {
     justify-content: center;
     align-items: center;
   }
-
+  .logoimg {
+    left: 155px;
+  }
   .projects {
     flex-direction: row;
     height: 22%;
@@ -932,7 +941,7 @@ label {
 
   .popup-info p {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 24px;
     color: #344563;
   }

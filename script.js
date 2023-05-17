@@ -41,17 +41,9 @@ const openMenu = () => {
   rotateRight.style.borderColor = "#fff";
   rotateLeft.style.borderColor = "#fff";
   activeMenu = true;
-  logo.style.color = "#fff";
-  hamburger.style.backgroundColor = "#6070ff";
-  mainSection.style.filter = "blur(6px)";
-  firstCard.style.filter = "blur(6px)";
-  secondCard.style.filter = "blur(6px)";
-  thirdCard.style.filter = "blur(6px)";
-  fourthCard.style.filter = "blur(6px)";
-  aboutCard.style.filter = "blur(6px)";
-  contactCard.style.filter = "blur(6px)";
 };
 const closeMenu = () => {
+  activeMenu = false;
   menuList.style.top = "-200vh";
   disappear.style.display = "block";
   rotateRight.style.transform = "rotate(0deg) translateX(0%) translateY(0%)";
@@ -60,15 +52,6 @@ const closeMenu = () => {
   rotateLeft.style.backgroundColor = "#6070ff";
   rotateRight.style.borderColor = "#6070ff";
   rotateLeft.style.borderColor = "#6070ff";
-  mainSection.style.filter = "blur(0)";
-  firstCard.style.filter = "blur(0)";
-  secondCard.style.filter = "blur(0)";
-  thirdCard.style.filter = "blur(0)";
-  fourthCard.style.filter = "blur(0)";
-  aboutCard.style.filter = "blur(0)";
-  contactCard.style.filter = "blur(0)";
-  logo.style.color = "#6070ff";
-  activeMenu = false;
 };
 
 menuList.addEventListener("click", (e) => {
@@ -207,8 +190,29 @@ const card5 = new Cards(
     stack3: "2023",
   }
 );
+const card6 = new Cards(
+  "KONAGRILL",
+  `This is a project which different delicacies offered by a beef restaurant.
+`,
+  '"./images/konagrill.jpg"',
+  ["MATHS", "Lead Developer", "2023"],
+  ['"canopy"', '"bed"', '"year"'],
+  ["HTML", "Webpack", "CSS", "JavaScript","API"],
+  '"https://david-lanzz.github.io/Kanban/dist/"',
+  '"https://github.com/David-Lanzz/Kanban"',
+  {
+    description: `This is a project which different delicacies offered by a beef restaurant.
+    All meals data are gotten from the company's API and displayed using Object Oriented programming.
+    Engagements like comments and reactions are also allowed`,
+    url: "./images/konagrill.jpg",
+    header: "KONAGRILL MEALS",
+    stack1: "BEEF",
+    stack2: "Lead Developer",
+    stack3: "2023",
+  }
+);
 
-const projectCards = [card1, card2, card3, card4,card5];
+const projectCards = [card1, card2, card3, card4,card5,card6];
 projectCards.map((card, index) => {
   card.id = index + 1;
   card.buttonId = index + 1;
@@ -311,7 +315,7 @@ window.addEventListener("click", (e) => {
   ) {
     if (activeMenu === false) {
       openMenu();
-    } else {
+    } else if(activeMenu === true) {
       closeMenu();
     }
   }
