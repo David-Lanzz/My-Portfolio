@@ -709,7 +709,7 @@ label {
 }
 
 .plangsContainer {
-    position: relative;
+    position: absolute;
     left: 0;
   }
   .move-away {
