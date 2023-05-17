@@ -713,7 +713,7 @@ label {
     left: 0;
   }
   .move-away {
-    position: absolute;
+    position: fixed;
     left: 500%;
   }
 
