@@ -271,7 +271,24 @@ header {
   margin-bottom: 8rem;
   transition: 0.5s;
 }
+#see-all {
+animation: change 4s infinite;
+}
 
+@keyframes change {
+  0% {
+    background-color: white;
+    color: #5e6c84;
+  }
+  50% {
+    color: white;
+    background-color: #5e6c84;
+  }
+  100% {
+    background-color: white;
+    color: #5e6c84;
+  }
+}
 h1 {
   font-size: 40px;
   font-weight: 700;
