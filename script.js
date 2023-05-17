@@ -357,10 +357,11 @@ window.addEventListener("click", (e) => {
       closeMenu();
     }
   }
-  if(target.id === "langs-dropdown"){
+  if(target.id === "langs-dropdown" || target.id === "langs"){
     document.querySelector(".plangsContainer").classList.toggle("move-away")
   }
-  else  if(target.id === "framework-dropdown"){
+  else  if(target.id === "framework-dropdown" || target.id === "framework"){
+    console.log("i work")
     document.querySelector(".frameworkContainer").classList.toggle("move-away")
   }
 
