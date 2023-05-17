@@ -360,6 +360,10 @@ window.addEventListener("click", (e) => {
   if(target.id === "langs"){
     document.querySelector(".plangsContainer").classList.toggle("move-away")
   }
+  else  if(target.id === "framework"){
+    document.querySelector(".frameworkContainer").classList.toggle("move-away")
+  }
+
   if (target.className.includes("buttons")) {
     displayPopup(projectCards, target);
     document.querySelector(".blur").classList.add("show-blur");
