@@ -237,7 +237,7 @@ const card8 = new Cards(
   '"./images/e_commerce.jpg"',
   ["SCORES", "Lead Developer", "2023"],
   ['"canopy"', '"bed"', '"year"'],
-  ["HTML", "Webpack", "CSS", "JavaScript"],
+  ["CSS", "React", "Vite", "JavaScript"],
   '"https://myecommerceapp-1nbf.onrender.com/"',
   '"https://github.com/David-Lanzz/ecommerceapp/"',
   {
