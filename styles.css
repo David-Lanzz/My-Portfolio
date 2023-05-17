@@ -585,6 +585,13 @@ h1 {
   font-weight: 700;
   font-size: 0.9rem;
 }
+.all-btn {
+  width: 100%;
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
 
 .cascade {
   height: 4rem;
@@ -720,7 +727,7 @@ label {
     left: 500%;
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .main-section {
     width: cover;
     height: 920px;

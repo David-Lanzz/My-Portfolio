@@ -262,11 +262,13 @@ projectCards.map((card, index) => {
   }
 });
 
+let default_loop_value = 4
+
 function createCards() {
   let techItems = "";
   let languages = "";
   if (techItems === "") {
-    for (let item = 0; item < projectCards.length; item += 1) {
+    for (let item = 0; item < default_loop_value; item += 1) {
       if (languages === "") {
         for (let i = 0; i < projectCards[item].technology.length; i += 1) {
           techItems += `<li class=${projectCards[item].techClass[i]}>${projectCards[item].technology[i]}</li>`;
@@ -361,7 +363,6 @@ window.addEventListener("click", (e) => {
     document.querySelector(".plangsContainer").classList.toggle("move-away")
   }
   else  if(target.id === "framework-dropdown" || target.id === "framework"){
-    console.log("i work")
     document.querySelector(".frameworkContainer").classList.toggle("move-away")
   }
 
@@ -369,7 +370,7 @@ window.addEventListener("click", (e) => {
     displayPopup(projectCards, target);
     document.querySelector(".blur").classList.add("show-blur");
     document.querySelector("body").classList.add("no-overflow");
-    if (window.screen.width < 600) {
+    if (window.screen.width < 700) {
       document.querySelector(".popup-container").classList.add("display-popup");
     } else {
       document
