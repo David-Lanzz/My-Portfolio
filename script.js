@@ -176,6 +176,9 @@ window.addEventListener('click', (e) => {
   } else if (target.id === 'framework-dropdown' || target.id === 'framework') {
     document.querySelector('.frameworkContainer').classList.toggle('move-away');
   }
+  else if (target.id === 'skills-dropdown' || target.id === 'skills') {
+    document.querySelector('.skillsContainer').classList.toggle('move-away');
+  }
 
   if (target.className.includes('project-buttons')) {
     displayPopup(projectCards, target);

@@ -544,7 +544,7 @@ h1 {
 .pLangs h2 {
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 20px;
   display: flex;
   align-items: center;
@@ -726,6 +726,7 @@ label {
 .plangsContainer {
   position: relative;
   right: 0;
+  flex-wrap: wrap;
 }
 
 .move-away {
@@ -829,12 +830,16 @@ label {
   .img {
     width: 45%;
     height: 100%;
-    margin-right: 2rem;
   }
 
   .projectInfo {
     width: 55%;
     margin-bottom: 5%;
+  }
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
   }
 
   .aboutProject {
@@ -878,7 +883,7 @@ label {
   .aboutme {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 3fr 1fr;
     padding: 0 10%;
     min-height: 50rem;
   }
