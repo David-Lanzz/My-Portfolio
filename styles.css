@@ -599,6 +599,10 @@ h1 {
   background-color: white;
   color: #5e6c84;
 }
+.thinline {
+  border-bottom: solid 1px #9a9a9a;
+  margin-top: 1rem;
+}
 
 .buttons:hover {
   background: #6070ff;
