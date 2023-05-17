@@ -197,7 +197,7 @@ const card6 = new Cards(
   '"./images/konagrill.jpg"',
   ["MATHS", "Lead Developer", "2023"],
   ['"canopy"', '"bed"', '"year"'],
-  ["HTML", "Webpack", "CSS", "JavaScript","API"],
+  ["HTML", "Webpack", "CSS", "JavaScript"],
   '"https://david-lanzz.github.io/Kanban/dist/"',
   '"https://github.com/David-Lanzz/Kanban"',
   {
@@ -211,8 +211,46 @@ const card6 = new Cards(
     stack3: "2023",
   }
 );
+const card7 = new Cards(
+  "LEADERBOARD",
+  `This is a project which displays a user leaderboard in a particular game.Users can store scores and view scores of other users.
+`,
+  '"./images/leaderboard.jpg"',
+  ["SCORES", "Lead Developer", "2023"],
+  ['"canopy"', '"bed"', '"year"'],
+  ["HTML", "Webpack", "CSS", "JavaScript"],
+  '"https://david-lanzz.github.io/Leaderboard-Project/dist/"',
+  '"https://github.com/David-Lanzz/Leaderboard-Project"',
+  {
+    description: `This is a project which displays a user leaderboard in a particular game.Users can store scores and view scores of other users`,
+    url: "./images/leaderboard.jpg",
+    header: "LEADERBOARD",
+    stack1: "SCORES",
+    stack2: "Lead Developer",
+    stack3: "2023",
+  }
+);
+const card8 = new Cards(
+  "E-COMMERCE",
+  `UNDER CONSTRUCTION!.
+`,
+  '"./images/e_commerce.jpg"',
+  ["SCORES", "Lead Developer", "2023"],
+  ['"canopy"', '"bed"', '"year"'],
+  ["HTML", "Webpack", "CSS", "JavaScript"],
+  '"https://myecommerceapp-1nbf.onrender.com/"',
+  '"https://github.com/David-Lanzz/ecommerceapp/"',
+  {
+    description: `UNDER CONSTRUCTION!`,
+    url: "./images/e_commerce.jpg",
+    header: "E-COMMERCE",
+    stack1: "SCORES",
+    stack2: "Lead Developer",
+    stack3: "2023",
+  }
+);
 
-const projectCards = [card1, card2, card3, card4,card5,card6];
+const projectCards = [card1, card2, card3, card4,card5,card6,card7,card8];
 projectCards.map((card, index) => {
   card.id = index + 1;
   card.buttonId = index + 1;
