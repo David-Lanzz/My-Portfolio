@@ -708,6 +708,15 @@ label {
   visibility: hidden;
 }
 
+.plangsContainer {
+    position: relative;
+    left: 0;
+  }
+  .move-away {
+    position: relative;
+    left: 500%;
+  }
+
 @media screen and (min-width: 600px) {
   .main-section {
     width: cover;
@@ -869,6 +878,12 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    left: 0;
+  }
+  .move-away {
+    position: absolute;
+    left: 500%;
   }
 
   .javaScript {
