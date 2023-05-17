@@ -357,9 +357,6 @@ window.addEventListener("click", (e) => {
       closeMenu();
     }
   }
-  if(target.id === "langs"){
-    document.querySelector(".plangsContainer").classList.toggle("move-away")
-  }
   if (target.className.includes("buttons")) {
     displayPopup(projectCards, target);
     document.querySelector(".blur").classList.add("show-blur");
