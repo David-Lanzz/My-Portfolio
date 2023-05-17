@@ -194,7 +194,7 @@ const card6 = new Cards(
   `This is a project which different delicacies offered by a beef restaurant.
 `,
   '"./images/konagrill.jpg"',
-  ['MATHS', 'Lead Developer', '2023'],
+  ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['HTML', 'Webpack', 'CSS', 'JavaScript'],
   '"https://david-lanzz.github.io/Kanban/dist/"',
@@ -234,7 +234,7 @@ const card8 = new Cards(
   `UNDER CONSTRUCTION!.
 `,
   '"./images/e_commerce.jpg"',
-  ['SCORES', 'Lead Developer', '2023'],
+  ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['CSS', 'React', 'Vite', 'JavaScript'],
   '"https://myecommerceapp-1nbf.onrender.com/"',
