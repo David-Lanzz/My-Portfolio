@@ -881,6 +881,10 @@ label {
     position: relative;
     left: 0;
   }
+  .move-away {
+    position: fixed;
+    left: 500%;
+  }
 
   .javaScript {
     margin-top: 0.7rem;
