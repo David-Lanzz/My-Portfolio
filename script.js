@@ -103,7 +103,6 @@ createCards();
 
 const displayPopup = (array, target) => {
   array.map((element) => {
-element.languages.map((language) => {
     if (target.id.toString() === element.id.toString()) {
       document.querySelector('.popup').innerHTML = `
  <section class= "popup-container">
@@ -133,7 +132,7 @@ element.languages.map((language) => {
     </li>
     <li class="popuplang lang">
         <ul class="popuplang-ul popup-justify" id="popuplang">
-<li class="html">${language}</li>
+${element.languages.map((language) => `<li class="html">${language}</li>`)}
         </ul>
         <ul class="popup-justify">
             <li class="popupBtn">
@@ -156,7 +155,6 @@ element.languages.map((language) => {
  `;
     }
   });
-})
 };
 
 window.addEventListener('click', (e) => {
@@ -175,10 +173,13 @@ window.addEventListener('click', (e) => {
   }
   if (target.id === 'langs-dropdown' || target.id === 'langs') {
     document.querySelector('.plangsContainer').classList.toggle('move-away');
+    document.querySelector('.v').classList.toggle('v-active');
   } else if (target.id === 'framework-dropdown' || target.id === 'framework') {
     document.querySelector('.frameworkContainer').classList.toggle('move-away');
+    document.querySelector('.frame-v').classList.toggle('v-active');
   } else if (target.id === 'skills-dropdown' || target.id === 'skills') {
     document.querySelector('.skillsContainer').classList.toggle('move-away');
+    document.querySelector('.skill-v').classList.toggle('v-active');
   }
 
   if (target.className.includes('project-buttons')) {
@@ -224,7 +225,6 @@ window.addEventListener('click', (e) => {
   if (target.id === 'see-all') {
     e.preventDefault();
     works.innerHTML = '';
-    e.target.innerHTML = 'See Less';
     defaultLoopValue = projectCards.length;
     createCards();
     e.target.style.display = 'none';

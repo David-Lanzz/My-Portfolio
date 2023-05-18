@@ -425,6 +425,10 @@ h1 {
   height: 24px;
 }
 
+.v-active {
+  transform: rotate(90deg);
+}
+
 .techstack div ul {
   margin-right: 17%;
   height: 100%;
