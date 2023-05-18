@@ -57,6 +57,10 @@ menuList.addEventListener('click', (e) => {
     || e.target.id === 'menuButton2'
     || e.target.id === 'menuButton3'
   ) {
+    document.querySelector('body').classList.remove('no-overflow');
+    for(let i = 0;i < tryme.length;i++){
+      tryme[i].classList.remove("show-blur")
+     }
     closeMenu();
   }
 });
