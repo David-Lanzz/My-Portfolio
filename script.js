@@ -12,6 +12,7 @@ let activeMenu = false;
 const email = document.querySelector('#email');
 const emailError = document.querySelector('#emailError');
 const inputname = document.querySelector('#name');
+const tryme = document.querySelectorAll(".blurr")
 
 const inputObj = {
   inputEmail: '',
@@ -132,7 +133,9 @@ const displayPopup = (array, target) => {
     </li>
     <li class="popuplang lang">
         <ul class="popuplang-ul popup-justify" id="popuplang">
-${element.languages.map((language) => `<li class="html">${language}</li>`)}
+${element.languages.map((language) => {
+  return `<li class="html">${language}</li>`
+})}
         </ul>
         <ul class="popup-justify">
             <li class="popupBtn">
@@ -167,7 +170,15 @@ window.addEventListener('click', (e) => {
   ) {
     if (activeMenu === false) {
       openMenu();
+      document.querySelector('body').classList.add('no-overflow');
+      for(let i = 0;i < tryme.length;i++){
+        tryme[i].classList.add("show-blur")
+       }
     } else if (activeMenu === true) {
+      for(let i = 0;i < tryme.length;i++){
+        tryme[i].classList.remove("show-blur")
+       }
+       document.querySelector('body').classList.remove('no-overflow');
       closeMenu();
     }
   }
@@ -181,6 +192,23 @@ window.addEventListener('click', (e) => {
     document.querySelector('.skillsContainer').classList.toggle('move-away');
     document.querySelector('.skill-v').classList.toggle('v-active');
   }
+  if(target.id === 'langs-dropdown' || target.id === 'langs' ||
+  target.id === 'framework-dropdown' || target.id === 'framework'
+  || target.id === 'skills-dropdown' || target.id === 'skills'
+   ) {
+    if(document.querySelector('.plangsContainer').classList.contains('move-away') === false
+    || document.querySelector('.frameworkContainer').classList.contains('move-away') === false
+    || document.querySelector('.skillsContainer').classList.contains('move-away') === false
+    ) {
+      document.querySelector('.lanzz').style.display = "none"
+    }
+    else if(document.querySelector('.plangsContainer').classList.contains('move-away') === true
+    || document.querySelector('.frameworkContainer').classList.contains('move-away') === true
+    || document.querySelector('.skillsContainer').classList.contains('move-away') === true
+    ) {
+      document.querySelector('.lanzz').style.display = "block"
+    }
+   }
 
   if (target.className.includes('project-buttons')) {
     e.preventDefault();

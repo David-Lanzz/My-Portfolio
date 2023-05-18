@@ -34,6 +34,9 @@ li {
 .menu ul {
   display: none;
 }
+.no-blur {
+  z-index: 10;
+}
 
 nav,
 .lang ul,
@@ -296,6 +299,13 @@ header {
   background-color: #fff;
   margin-bottom: 8rem;
   transition: 0.5s;
+}
+.lanzz {
+  width: 100%;
+}
+.lanzz img {
+  width: 100%;
+  border-radius: 2rem;
 }
 
 #see-all {
@@ -872,6 +882,11 @@ label {
     background-image: url('./images/hand-cursor\ 1.png');
     background-repeat: no-repeat;
     background-position: 87% 100%;
+  }
+
+  .lanzz img {
+    width: 20rem;
+   height: 25rem;
   }
 
   .html,
