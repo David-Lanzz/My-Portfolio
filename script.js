@@ -184,7 +184,7 @@ window.addEventListener('click', (e) => {
     displayPopup(projectCards, target);
     document.querySelector('.blur').classList.add('show-blur');
     document.querySelector('body').classList.add('no-overflow');
-    if (window.screen.width < 600) {
+    if (window.screen.width < 710) {
       document.querySelector('.popup-container').classList.add('display-popup');
     } else {
       document

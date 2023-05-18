@@ -759,7 +759,7 @@ label {
   margin-bottom: -2rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 710px) {
   .main-section {
     width: cover;
     height: 920px;
