@@ -21,21 +21,59 @@ li {
   list-style: none;
 }
 
+.lang ul {
+  gap: 0.2rem;
+}
+
+.popup-stack ul {
+  justify-content: space-between;
+  margin-right: 20%;
+  height: 100%;
+}
+
+.menu ul {
+  display: none;
+}
+
+nav,
+.lang ul,
+.logo,
+.popup-image,
+.popup-header,
+.popup-stack ul,
+.popupBtn,
+.popupBtn a,
+.techstack div,
+.icons,
+.projects,
+.mps,
+.html,
+.techstack div ul,
+.css,
+.js,
+.view a,
+.aboutInfo,
+.aboutInfo h2,
+.get,
+.langInfo h3,
+.pLangs,
+.plangs h2,
+.frameInfo,
+.all-cards,
+.cm h2,
+#submit {
+  display: flex;
+}
+
 nav {
   height: 48px;
   padding: 0 24px;
-  display: flex;
   align-items: center;
   background: #fff;
 }
 
 .no-overflow {
   overflow: hidden;
-}
-
-.lang ul {
-  display: flex;
-  gap: 0.2rem;
 }
 
 .popuplang-ul,
@@ -63,7 +101,6 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: #6070ff;
@@ -113,15 +150,18 @@ nav {
   color: #67798e;
 }
 
-.popup-image {
-  display: flex;
+.popup-image,
+.projects,
+.aboutInfo {
   flex-direction: column;
+}
+
+.popup-image {
   gap: 1rem;
   min-height: 20rem;
 }
 
 .popup-header {
-  display: flex;
   justify-content: space-between;
   height: 10%;
   align-items: center;
@@ -136,13 +176,6 @@ nav {
 
 .popup-stack {
   height: 10%;
-}
-
-.popup-stack ul {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20%;
-  height: 100%;
 }
 
 .popup-img {
@@ -173,7 +206,6 @@ nav {
 }
 
 .popupBtn {
-  display: flex;
   justify-content: space-between;
   width: 17.5rem;
   align-items: flex-end;
@@ -184,7 +216,6 @@ nav {
   border: solid 1px;
   font-weight: 500;
   font-size: 15px;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #396df2;
@@ -206,7 +237,6 @@ form ul li {
 
 .techstack div {
   height: 100%;
-  display: flex;
   width: 100%;
 }
 
@@ -256,10 +286,6 @@ header {
   background-color: #6070ff;
 }
 
-.menu ul {
-  display: none;
-}
-
 .main-section {
   min-height: 20rem;
   background-image: url('./images/header-shapes\ mobile.png');
@@ -271,8 +297,9 @@ header {
   margin-bottom: 8rem;
   transition: 0.5s;
 }
+
 #see-all {
-animation: change 4s infinite;
+  animation: change 4s infinite;
 }
 
 @keyframes change {
@@ -280,15 +307,18 @@ animation: change 4s infinite;
     background-color: white;
     color: #5e6c84;
   }
+
   50% {
     color: white;
     background-color: #5e6c84;
   }
+
   100% {
     background-color: white;
     color: #5e6c84;
   }
 }
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -317,7 +347,6 @@ h1 {
 
 .icons {
   margin-top: 1rem;
-  display: flex;
   width: 10rem;
   justify-content: space-between;
   align-items: center;
@@ -331,8 +360,6 @@ h1 {
 
 .projects {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 16px;
   gap: 12px;
@@ -365,7 +392,6 @@ h1 {
 }
 
 .mps {
-  display: flex;
   align-items: center;
   font-style: normal;
   font-weight: 700;
@@ -380,9 +406,27 @@ h1 {
   gap: 1rem;
 }
 
+.html,
+#sumbmit {
+  flex-direction: row;
+}
+
+.html {
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  height: 24px;
+}
+
 .techstack div ul {
   margin-right: 17%;
-  display: flex;
   height: 100%;
   width: 80%;
   align-items: center;
@@ -423,41 +467,6 @@ h1 {
   margin-top: 1rem;
 }
 
-.html,
-.css,
-.js {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-
-.html {
-  height: 24px;
-}
-
-.ruby {
-  display: none;
-}
-
-.css {
-  width: 45px;
-  height: 24px;
-}
-
-.js {
-  width: 89px;
-  height: 24px;
-}
-
 .view a {
   width: 150px;
   height: 40px;
@@ -466,7 +475,6 @@ h1 {
   justify-content: center;
   font-size: 18px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
@@ -485,8 +493,6 @@ h1 {
 }
 
 .aboutInfo {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 2rem;
   gap: 1.5rem;
 }
@@ -496,7 +502,6 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   color: #172b4d;
 }
@@ -522,7 +527,6 @@ h1 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.03em;
@@ -538,7 +542,6 @@ h1 {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
   align-items: center;
   color: #000;
 }
@@ -546,7 +549,6 @@ h1 {
 .pLangs {
   background: #f7f7f9;
   border-radius: 8px;
-  display: flex;
   align-items: center;
 }
 
@@ -563,7 +565,6 @@ h1 {
   font-weight: 500;
   font-size: 11px;
   line-height: 20px;
-  display: flex;
   align-items: center;
   color: #253858;
   margin-left: 1rem;
@@ -583,7 +584,6 @@ h1 {
   color: #000;
   border-bottom: solid 1px #dfe1e6;
   padding: 10px 0 10px 0;
-  display: flex;
 }
 
 .frameInfo p {
@@ -609,7 +609,6 @@ h1 {
 
 .all-btn {
   width: 100%;
-  display: flex;
   padding-top: 1rem;
   justify-content: center;
 }
@@ -670,7 +669,6 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -715,8 +713,6 @@ textarea {
 }
 
 #submit {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 12px 16px;
   width: 140px;
@@ -753,7 +749,6 @@ label {
 
 .all-cards {
   width: 100%;
-  display: flex;
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: -2rem;
@@ -853,6 +848,7 @@ label {
     width: 55%;
     margin-bottom: 5%;
   }
+
   .skillsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

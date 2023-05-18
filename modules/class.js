@@ -70,7 +70,7 @@ export const card3 = new Cards(
   '"./images/bookstore.jpg"',
   ['TODO', 'Lead Developer', '2018'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'React', 'CSS', 'JavaScript'],
+  ['HTML','React','CSS','JavaScript'],
   '"https://bookstore-pfc6.onrender.com/"',
   '"https://github.com/David-Lanzz/Bookstore/"',
   {

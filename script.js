@@ -103,6 +103,7 @@ createCards();
 
 const displayPopup = (array, target) => {
   array.map((element) => {
+element.languages.map((language) => {
     if (target.id.toString() === element.id.toString()) {
       document.querySelector('.popup').innerHTML = `
  <section class= "popup-container">
@@ -132,7 +133,7 @@ const displayPopup = (array, target) => {
     </li>
     <li class="popuplang lang">
         <ul class="popuplang-ul popup-justify" id="popuplang">
-${element.languages.map((language) => `<li class="html">${language}</li>`)}
+<li class="html">${language}</li>
         </ul>
         <ul class="popup-justify">
             <li class="popupBtn">
@@ -155,6 +156,7 @@ ${element.languages.map((language) => `<li class="html">${language}</li>`)}
  `;
     }
   });
+})
 };
 
 window.addEventListener('click', (e) => {
@@ -175,12 +177,12 @@ window.addEventListener('click', (e) => {
     document.querySelector('.plangsContainer').classList.toggle('move-away');
   } else if (target.id === 'framework-dropdown' || target.id === 'framework') {
     document.querySelector('.frameworkContainer').classList.toggle('move-away');
-  }
-  else if (target.id === 'skills-dropdown' || target.id === 'skills') {
+  } else if (target.id === 'skills-dropdown' || target.id === 'skills') {
     document.querySelector('.skillsContainer').classList.toggle('move-away');
   }
 
   if (target.className.includes('project-buttons')) {
+    e.preventDefault();
     displayPopup(projectCards, target);
     document.querySelector('.blur').classList.add('show-blur');
     document.querySelector('body').classList.add('no-overflow');
@@ -193,8 +195,11 @@ window.addEventListener('click', (e) => {
     }
   }
   if (target.id === 'submit' && email.value !== email.value.toLowerCase()) {
-    emailError.style.visibility = 'visible';
     e.preventDefault();
+    emailError.style.visibility = 'visible';
+    setTimeout(() => {
+      emailError.style.visibility = 'hidden';
+    }, 2000);
   } else if (
     target.id === 'submit'
     && email.value === email.value.toLowerCase()
@@ -206,6 +211,7 @@ window.addEventListener('click', (e) => {
     localStorage.setItem('object', JSON.stringify(inputObj));
   }
   if (target.id === 'cancel-popup') {
+    e.preventDefault();
     document
       .querySelector('.popup-container')
       .classList.remove('display-popup');
