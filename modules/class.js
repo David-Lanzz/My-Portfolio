@@ -70,7 +70,7 @@ export const card3 = new Cards(
   '"./images/bookstore.jpg"',
   ['TODO', 'Lead Developer', '2018'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML','React','CSS','JavaScript'],
+  ['HTML','React','CSS','JavaScript','Redux/TK','API','React-Router'],
   '"https://bookstore-pfc6.onrender.com/"',
   '"https://github.com/David-Lanzz/Bookstore/"',
   {
@@ -90,7 +90,7 @@ export const card4 = new Cards(
   '"./images/covid.jpg"',
   ['METRICS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'React', 'CSS', 'JavaScript'],
+  ['HTML', 'React', 'CSS', 'JavaScript','API','Redux/TK','React-Router'],
   '"https://mapmetrics.onrender.com/"',
   '"https://github.com/David-Lanzz/map-metrics/"',
   {
@@ -110,7 +110,7 @@ export const card5 = new Cards(
   '"./images/math_magicians.jpg"',
   ['MATHS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'React', 'CSS', 'JavaScript'],
+  ['HTML', 'React', 'CSS', 'JavaScript','React-Router'],
   '"https://github.com/David-Lanzz/math-magicians/"',
   '"https://mathmagicians-4omq.onrender.com/"',
   {
@@ -129,7 +129,7 @@ export const card6 = new Cards(
   '"./images/konagrill.jpg"',
   ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'Webpack', 'CSS', 'JavaScript'],
+  ['HTML', 'Webpack', 'CSS', 'JavaScript','API'],
   '"https://david-lanzz.github.io/Kanban/dist/"',
   '"https://github.com/David-Lanzz/Kanban"',
   {
@@ -150,7 +150,7 @@ export const card7 = new Cards(
   '"./images/leaderboard.jpg"',
   ['SCORES', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'Webpack', 'CSS', 'JavaScript'],
+  ['HTML', 'Webpack', 'CSS', 'JavaScript','API'],
   '"https://david-lanzz.github.io/Leaderboard-Project/dist/"',
   '"https://github.com/David-Lanzz/Leaderboard-Project"',
   {
@@ -164,7 +164,7 @@ export const card7 = new Cards(
 );
 export const card8 = new Cards(
   'E-COMMERCE',
-  `UNDERexport constRUCTION!.
+  `UNDER CONSTRUCTION!.
   `,
   '"./images/e_commerce.jpg"',
   ['COMMERCE', 'Lead Developer', '2023'],
@@ -173,7 +173,7 @@ export const card8 = new Cards(
   '"https://myecommerceapp-1nbf.onrender.com/"',
   '"https://github.com/David-Lanzz/ecommerceapp/"',
   {
-    description: 'UNDERexport constRUCTION!',
+    description: 'UNDER CONSTRUCTION!',
     url: './images/e_commerce.jpg',
     header: 'E-COMMERCE',
     stack1: 'SCORES',

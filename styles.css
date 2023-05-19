@@ -23,6 +23,7 @@ li {
 
 .lang ul {
   gap: 0.2rem;
+  flex-wrap: wrap;
 }
 
 .popup-stack ul {
@@ -194,14 +195,15 @@ nav {
 
 .popup-info {
   display: grid;
-  grid-template-rows: 73% 8% 19%;
+  grid-template-rows: 55% 31% 24%;
 }
 
 .popup-info p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
-  color: #344563;
+  padding-top: 1rem;
+  color: #556e9b;
 }
 
 .popuplang {
@@ -278,6 +280,9 @@ header {
 
 .menu div {
   transition: 0.5s;
+}
+.view {
+  padding: 1rem 0;
 }
 
 .menu a div {
@@ -474,7 +479,7 @@ h1 {
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
-  color: #344563;
+  color: #556e9b;
 }
 
 #popuplang {

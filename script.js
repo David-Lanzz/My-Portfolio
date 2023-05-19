@@ -67,7 +67,7 @@ menuList.addEventListener('click', (e) => {
 
 const works = document.querySelector('#works');
 
-const projectCards = [card1, card2, card3, card4, card5, card6, card7, card8];
+const projectCards = [card1, card3, card4, card6, card5, card2, card7, card8];
 projectCards.map((card, index) => {
   card.id = index + 1;
   card.buttonId = index + 1;
