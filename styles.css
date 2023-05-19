@@ -985,6 +985,11 @@ label {
   #submit {
     margin-left: 31%;
   }
+  .frameworkContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   .techstack div ul {
     width: 100%;
