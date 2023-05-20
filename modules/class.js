@@ -169,7 +169,7 @@ export const card8 = new Cards(
   '"./images/e_commerce.jpg"',
   ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['CSS', 'React', 'Vite', 'JavaScript'],
+  ['CSS', 'React', 'Vite', 'JavaScript','React Router','HTML','Redux/TK','API'],
   '"https://myecommerceapp-1nbf.onrender.com/"',
   '"https://github.com/David-Lanzz/ecommerceapp/"',
   {

@@ -872,9 +872,9 @@ label {
   }
 
   .skillsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .aboutProject {
