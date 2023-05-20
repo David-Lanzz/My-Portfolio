@@ -471,6 +471,9 @@ h1 {
   color: #7a869a;
   list-style-type: disc;
 }
+.langs {
+  cursor: pointer;
+}
 
 .aboutProject {
   width: 295px;
@@ -853,7 +856,7 @@ label {
   .projects {
     flex-direction: row;
     height: 22%;
-    width: 80%;
+    width: 70%;
     justify-content: space-between;
     padding-top: 30px;
   }
