@@ -518,6 +518,9 @@ h1 {
   margin-bottom: 2rem;
   gap: 1.5rem;
 }
+.about-myself {
+  font-size: 12px;
+}
 
 .aboutInfo h2 {
   font-style: normal;
@@ -964,7 +967,7 @@ label {
   }
 
   .aboutInfo {
-    margin-top: 10rem;
+    margin-top: 6rem;
     gap: 2rem;
     margin-right: 2rem;
     margin-bottom: -100%;
