@@ -890,7 +890,7 @@ label {
   }
 
   .lanzz img {
-    width: 20rem;
+    width: 16rem;
    height: 25rem;
   }
 
@@ -1051,5 +1051,6 @@ label {
 
   .popupBtn {
     width: 17.5rem;
+    margin-top: 3rem;
   }
 }
