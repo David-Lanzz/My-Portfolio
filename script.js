@@ -141,6 +141,7 @@ ${element.languages.map((language) => {
   return `<li class="html">${language}</li>`
 })}
         </ul>
+        <div class="thinline"></div>
         <ul class="popup-justify">
             <li class="popupBtn">
                 <div id="livelink">

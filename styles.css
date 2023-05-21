@@ -22,7 +22,7 @@ li {
 }
 
 .lang ul {
-  gap: 0.2rem;
+  gap: 2px;
   flex-wrap: wrap;
 }
 
@@ -206,10 +206,6 @@ nav {
   color: #556e9b;
 }
 
-.popuplang {
-  border-bottom: 1px solid #ebecf0;
-}
-
 .popupBtn {
   justify-content: space-between;
   width: 17.5rem;
@@ -343,11 +339,12 @@ h1 {
 }
 
 .main-section p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  color: #556e9b;
 }
 
 .lc {
@@ -480,7 +477,7 @@ h1 {
   height: 76px;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
   color: #556e9b;
 }
@@ -652,7 +649,7 @@ h1 {
 }
 
 .thinline {
-  border-bottom: solid 1px #d0d0d0;
+  border-bottom: solid 1px #e6e6e7;
   margin-top: 1rem;
 }
 
@@ -1004,7 +1001,6 @@ label {
 
   .techstack div ul {
     width: 100%;
-    margin-right: 22%;
   }
 
   .popup-container {
@@ -1020,7 +1016,7 @@ label {
 
   .popup-stack {
     height: 10%;
-    margin-right: 30%;
+    margin-right: 40%;
   }
 
   .popup-img {
@@ -1045,7 +1041,7 @@ label {
   }
 
   .popuplang {
-    border-bottom: 1px solid #ebecf0;
+
     height: 30%;
     margin-left: 1rem;
   }
@@ -1059,4 +1055,10 @@ label {
     width: 17.5rem;
     margin-top: 3rem;
   }
+}
+
+@media screen and (min-width: 980px){
+.techstack div ul {
+  margin-right: 30%;
+}
 }

@@ -70,7 +70,7 @@ export const card3 = new Cards(
   '"./images/bookstore.jpg"',
   ['TODO', 'Lead Developer', '2018'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML','React','CSS','JavaScript','Redux/TK','API','React-Router'],
+  ['React','CSS','JavaScript','Redux/TK','API','React-Router'],
   '"https://bookstore-pfc6.onrender.com/"',
   '"https://github.com/David-Lanzz/Bookstore/"',
   {
@@ -90,7 +90,7 @@ export const card4 = new Cards(
   '"./images/covid.jpg"',
   ['METRICS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['HTML', 'React', 'CSS', 'JavaScript','API','Redux/TK','React-Router'],
+  ['React', 'CSS', 'JavaScript','API','Redux/TK','React-Router'],
   '"https://mapmetrics.onrender.com/"',
   '"https://github.com/David-Lanzz/map-metrics/"',
   {
@@ -111,8 +111,8 @@ export const card5 = new Cards(
   ['MATHS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['HTML', 'React', 'CSS', 'JavaScript','React-Router'],
-  '"https://github.com/David-Lanzz/math-magicians/"',
   '"https://mathmagicians-4omq.onrender.com/"',
+  '"https://github.com/David-Lanzz/math-magicians/"',
   {
     description: 'Ever used a calculator with quotes before? I guess not...This is a project which allows users perform basic calculations in mathematics while also displaying quotes given by an API',
     url: './images/math_magicians.jpg',
@@ -169,7 +169,7 @@ export const card8 = new Cards(
   '"./images/e_commerce.jpg"',
   ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['CSS', 'React', 'Vite', 'JavaScript','React Router','HTML','Redux/TK','API'],
+  ['CSS', 'React', 'Vite', 'JavaScript','React Router','Redux/TK','API'],
   '"https://myecommerceapp-1nbf.onrender.com/"',
   '"https://github.com/David-Lanzz/ecommerceapp/"',
   {
