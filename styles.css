@@ -337,15 +337,6 @@ h1 {
   letter-spacing: 0;
   text-align: left;
 }
-.lc {
-  margin-top: 1rem;
-  width: 200px;
-  height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: #7f8cff;
-}
 
 .main-section p {
   font-size: 12px;
@@ -354,6 +345,16 @@ h1 {
   letter-spacing: 0;
   text-align: left;
   color: #556e9b;
+}
+
+.lc {
+  margin-top: 1rem;
+  width: 200px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
 }
 
 .icons {
