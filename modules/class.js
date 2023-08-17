@@ -166,12 +166,32 @@ export const card8 = new Cards(
   'E-COMMERCE',
   `UNDER CONSTRUCTION!.
   `,
-  '"./images/e_commerce.jpg"',
+  '"./images/doc.png"',
   ['COMMERCE', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['CSS', 'React', 'Vite', 'JavaScript','React Router','Redux/TK','API'],
   '"https://myecommerceapp-1nbf.onrender.com/"',
   '"https://github.com/David-Lanzz/ecommerceapp/"',
+  {
+    description: 'UNDER CONSTRUCTION!',
+    url: './images/e_commerce.jpg',
+    header: 'E-COMMERCE',
+    stack1: 'SCORES',
+    stack2: 'Lead Developer',
+    stack3: '2023',
+  },
+);
+export const card9 = new Cards(
+  'BOOK a DOC',
+  `This is a project built by me and my team of developers to help users all
+  around the world book doctors according to their availability and convenience.
+  `,
+  '"./images/e_commerce.jpg"',
+  ['HEALTH', 'Lead Developer', '2023'],
+  ['"canopy"', '"bed"', '"year"'],
+  ['TailWindCSS', 'React', 'Ruby on Rails', 'API','JavaScript','Redux/TK','React Router'],
+  '"https://reserve-me-a-doc.onrender.com/"',
+  '"https://github.com/ilyassatlassi/final-capstone-project-frontend"',
   {
     description: 'UNDER CONSTRUCTION!',
     url: './images/e_commerce.jpg',
