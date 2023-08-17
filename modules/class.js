@@ -186,7 +186,7 @@ export const card9 = new Cards(
   `This is a project built by me and my team of developers to help users all
   around the world book doctors according to their availability and convenience.
   `,
-  '"./images/doc.PNG"',
+  '"images\doc.PNG"',
   ['HEALTH', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['TailWindCSS', 'React', 'Ruby on Rails', 'API','JavaScript','Redux/TK','React Router'],
