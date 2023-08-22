@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans:wght@400;700&family=Poppins:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -88,9 +90,9 @@ nav {
 
 .logoimg {
   width: 10rem;
-  height: 3rem;
+  height: 9rem;
   position: absolute;
-  top: 0;
+  top: -90%;
   left: 0;
 }
 
@@ -277,9 +279,9 @@ header {
 .menu div {
   transition: 0.5s;
 }
-.view {
+/* .view {
   padding: 1rem 0;
-}
+} */
 
 .menu a div {
   border: 1px solid #6070ff;
@@ -310,7 +312,7 @@ header {
 }
 
 #see-all {
-  animation: change 4s infinite;
+  animation: change 5s infinite;
 }
 
 @keyframes change {
@@ -373,34 +375,60 @@ h1 {
 .projects {
   box-sizing: border-box;
   align-items: center;
-  padding: 16px;
   gap: 12px;
   width: 327px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  position: relative;
+}
+.projects::before {
+  content: '';
+  position: absolute;
+  transform: scale(1.009);
+  z-index: -1;
+  inset: 0;
+  animation: change-color 5s infinite ease-in-out;
+  border-radius: 16px;
+}
+
+@keyframes change-color {
+  0% {
+    background: rgb(238, 238, 238)
+  }
+  50% {
+    background: rgb(65, 86, 138)
+  }
+  100% {
+    background: rgb(238, 238, 238)
+  }
 }
 
 .img {
   width: 300px;
   height: 220px;
-  margin-bottom: 1rem;
   border-radius: 8px;
+  border: solid 1px rgb(220, 220, 220);
+}
+
+.img:hover {
+  transform: scale(1.009);
+  border: #333 #333 #333 #333;
 }
 
 .projectInfo {
   width: 300px;
   height: calc(552px - 250px - 0.5rem);
   display: grid;
-  grid-template-rows: 16.1% 17.9% 33.9% 11% auto;
+  gap: 0.5rem;
 }
 
 .tonic {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 35px;
   line-height: 44px;
-  color: #172b4d;
+  color: #001F3F;
 }
 
 .mps {
@@ -426,14 +454,14 @@ h1 {
 .html {
   align-items: center;
   padding: 4px 12px;
-  background: #ebebff;
+  background: rgba(221, 221, 252, 0.875);
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: rgb(31, 52, 105);
   height: 24px;
 }
 
@@ -456,16 +484,16 @@ h1 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #344563;
+  color: #172b4d;
 }
 
 .bed {
-  color: #7a869a;
+  color: #686868c3;
   list-style-type: disc;
 }
 
 .year {
-  color: #7a869a;
+  color: #686868c3;
   list-style-type: disc;
 }
 .langs {
@@ -474,12 +502,13 @@ h1 {
 
 .aboutProject {
   width: 295px;
-  height: 76px;
+  height: 100px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  color: #405172;
+  color: #454d72;
+  overflow: auto;
 }
 
 #popuplang {
@@ -641,6 +670,25 @@ h1 {
 
 .buttons {
   transition: 0.5s;
+  animation: color-change 8s infinite;
+}
+
+@keyframes color-change {
+  0%{
+    background-color:  #e5e5e5 ;
+    border: solid 1px #9EB8CC;
+    color: #30466c;
+  }
+  50% {
+    background-color:  #384d72 ;
+    border: solid 1px #9EB8CC;
+    color: #fff;
+  }
+  100% {
+    background-color:  #e5e5e5 ;
+    border: solid 1px #9EB8CC;
+    color: #30466c;
+  }
 }
 
 .buttons:disabled {
@@ -855,14 +903,18 @@ label {
 
   .projects {
     flex-direction: row;
-    height: 22%;
-    width: 70%;
+    height: 28rem;
+    width: 65rem;
     justify-content: space-between;
-    padding-top: 30px;
+    padding: 0.7rem;
+  }
+
+  .aboutProject {
+    overflow: visible;
   }
 
   .img {
-    width: 45%;
+    width: 60%;
     height: 100%;
   }
 
@@ -883,7 +935,7 @@ label {
   }
 
   .reverse {
-    flex-direction: row-reverse;
+flex-direction: row;
   }
 
   .pointer {
