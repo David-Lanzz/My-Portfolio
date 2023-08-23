@@ -24,10 +24,11 @@ class Cards {
 
 export const card1 = new Cards(
   'Music Festival',
-  `Experience the ultimate Wizkid Musical Festival journey through our digital platform.
-   Get in-depth insights into the upcoming festival in Lagos, Nigeria.
-    Discover featured artistes, event schedules, and venue details. Seamlessly book your tickets, explore interactive maps,
-   and share the excitement with friends. Elevate your festival experience with our all-inclusive hub.`,
+  `Embark on an exclusive journey with the Wizkid Musical Festival via
+   our digital platform. Gain in-depth insights into the upcoming Lagos event,
+    explore featured artistes, schedules, and venue details. Seamlessly book your tickets,
+     engage with event highlights, and share the excitement.
+  Elevate your festival experience with our comprehensive hub.`,
   "'./images/card-images/mil.png'",
   ['CANOPY', 'Front End Dev', '2015'],
   ['"canopy"', '"bed"', '"year"'],
@@ -47,8 +48,12 @@ export const card1 = new Cards(
 );
 export const card2 = new Cards(
   'ToDo List',
-  `This project is containing a ToDo list which i used to sharpen my skills in
-   JavaScript and also to learn how to use webpacks efficiently.`,
+  `This project unveils an innovative todo list application,
+   equipping users with the ability to adeptly prioritize, edit, and remove tasks.
+    Notably, the application's seamless persistence of task data ensures a fluid and uninterrupted
+     experience for users throughout their interactions.
+   This technological feat aims to streamline task management and enhance user productivity.
+  `,
   '"./images/card-images/todo.png"',
   ['TODO', 'Lead Developer', '2018'],
   ['"canopy"', '"bed"', '"year"'],
@@ -67,8 +72,10 @@ export const card2 = new Cards(
 );
 export const card3 = new Cards(
   'Book Store',
-  `This is a project which allows users add books to an API for other users to read and vice versa.
-  `,
+  `This forward-thinking bookstore application simplifies access to meticulously
+   curated course materials for Nigerian students. Users can contribute books, enhancing the
+    collaborative library, and access author information, enriching the academic resource hub's comprehensiveness.
+   Additionally, users can track their reading progress, further enhancing their engagement.`,
   '"./images/bookstore.jpg"',
   ['TODO', 'Lead Developer', '2018'],
   ['"canopy"', '"bed"', '"year"'],
@@ -87,8 +94,11 @@ export const card3 = new Cards(
 );
 export const card4 = new Cards(
   'COVID STATS',
-  `This is a project which allows users have access to the data statistics of COVID cases per country.
-  `,
+  `Amid the intricate challenges posed by the pandemic,
+   this initiative stands as a beacon of compassion, empowering global users
+    with vital COVID-19 data. By offering meticulous country-specific case and fatality
+     details, it fosters a comprehensive
+   awareness of the pandemic's far-reaching impact and its significance on a global scale.`,
   '"./images/card-images/covid.png"',
   ['METRICS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
@@ -96,8 +106,10 @@ export const card4 = new Cards(
   '"https://mapmetrics.onrender.com/"',
   '"https://github.com/David-Lanzz/map-metrics/"',
   {
-    description: `With all due respect to lives lost during the COVID 19 pandemic,This project allows users zccross the globe have access to
-    the data statistics of COVID cases per country. The project displays the names of countries and he states data of confirmed cases and deaths recorded.`,
+    description: `Amid the challenges posed by the pandemic, this
+     compassionate initiative empowers global users with essential COVID-19 data.
+      By offering country-specific case and fatality details, it
+     facilitates a comprehensive awareness of the pandemic's widespread impact and significance.`,
     url: './images/card-images/covid.png',
     header: 'COVID 19 MAP METRICS',
     stack1: 'METRICS',
@@ -107,8 +119,10 @@ export const card4 = new Cards(
 );
 export const card5 = new Cards(
   'CALCULATOR',
-  `This is a project which allows users perform basic calculations in mathematics while also displaying quotes given by an API.
-  `,
+  `This project introduces users to the capability of performing fundamental
+   mathematical calculations while concurrently providing inspirational quotes sourced
+   from an API. By seamlessly amalgamating mathematics and motivational content,
+   the project aims to infuse an element of enjoyment into the realm of math, enhancing the overall user experience.`,
   '"./images/card-images/math.png"',
   ['MATHS', 'Lead Developer', '2023'],
   ['"canopy"', '"bed"', '"year"'],
@@ -126,7 +140,10 @@ export const card5 = new Cards(
 );
 export const card6 = new Cards(
   'KONAGRILL',
-  `This is a project which different delicacies offered by a beef restaurant.
+  `This project showcases the diverse range of delectable delicacies
+  available at a beef restaurant. Leveraging the company's API, the application employs Object-Oriented
+   programming to effectively present meal information. Furthermore, users can actively
+  engage through comments and reactions, enhancing the interactive dining experience.
   `,
   '"./images/card-images/kona.png"',
   ['COMMERCE', 'Lead Developer', '2023'],
@@ -135,9 +152,10 @@ export const card6 = new Cards(
   '"https://david-lanzz.github.io/Kanban/dist/"',
   '"https://github.com/David-Lanzz/Kanban"',
   {
-    description: `This is a project which different delicacies offered by a beef restaurant.
-      All meals data are gotten from the company's API and displayed using Object Oriented programming.
-      Engagements like comments and reactions are also allowed`,
+    description: `This project showcases the diverse range of delectable delicacies
+     available at a beef restaurant. Leveraging the company's API, the application employs Object-Oriented
+      programming to effectively present meal information. Furthermore, users can actively
+     engage through comments and reactions, enhancing the interactive dining experience.`,
     url: './images/card-images/kona.png',
     header: 'KONAGRILL MEALS',
     stack1: 'BEEF',
@@ -147,7 +165,11 @@ export const card6 = new Cards(
 );
 export const card7 = new Cards(
   'LEADERBOARD',
-  `This is a project which displays a user leaderboard in a particular game.Users can store scores and view scores of other users.
+  `This project serves as a user leaderboard for a specific game,
+   enabling participants to store their scores and access the scores achieved
+    by other users. Through this implementation, users can easily track their
+     progress and compare their performance with fellow participants,
+   fostering a sense of competition and engagement within the gaming community.
   `,
   '"./images/card-images/leaderboard.png"',
   ['SCORES', 'Lead Developer', '2023'],
@@ -185,8 +207,10 @@ export const card8 = new Cards(
 );
 export const card9 = new Cards(
   'BOOK a DOC',
-  `This is a project built by me and my team of developers to help users all
-  around the world book doctors according to their availability and convenience.
+  `This collaborative project, crafted by my team of developers and me,
+   offers a global user base the convenience of booking doctors based on their individual
+    availability and preferences. By providing a seamless platform for scheduling appointments,
+   we aim to enhance the accessibility and comfort of healthcare services for users worldwide.
   `,
   '"./images/card-images/doc.png"',
   ['HEALTH', 'Lead Developer', '2023'],
