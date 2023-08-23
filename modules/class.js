@@ -30,7 +30,7 @@ export const card1 = new Cards(
      engage with event highlights, and share the excitement.
   Elevate your festival experience with our comprehensive hub.`,
   "'./images/card-images/mil.png'",
-  ['CANOPY', 'Front End Dev', '2015'],
+  ['CANOPY', 'Front End', '2015'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','HTML', 'CSS','Git','GitHub'],
   '"https://david-lanzz.github.io/My-First-Capstone/"',
@@ -55,7 +55,7 @@ export const card2 = new Cards(
    This technological feat aims to streamline task management and enhance user productivity.
   `,
   '"./images/card-images/todo.png"',
-  ['TODO', 'Lead Developer', '2018'],
+  ['TODO', 'Front End', '2018'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','Webpack','HTML', 'CSS','Git','GitHub'],
   '"https://david-lanzz.github.io/My-ToDo-List/dist/"',
@@ -77,7 +77,7 @@ export const card3 = new Cards(
     collaborative library, and access author information, enriching the academic resource hub's comprehensiveness.
    Additionally, users can track their reading progress, further enhancing their engagement.`,
   '"./images/bookstore.jpg"',
-  ['TODO', 'Lead Developer', '2018'],
+  ['LIBRARY', 'Full Stack', '2018'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','React','Redux','API','CSS','React-Router','Git','GitHub'],
   '"https://bookstore-pfc6.onrender.com/"',
@@ -100,7 +100,7 @@ export const card4 = new Cards(
      details, it fosters a comprehensive
    awareness of the pandemic's far-reaching impact and its significance on a global scale.`,
   '"./images/card-images/covid.png"',
-  ['METRICS', 'Lead Developer', '2023'],
+  ['METRICS', 'Front End', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','React','Redux','API','React-Router','CSS','Git','GitHub'],
   '"https://mapmetrics.onrender.com/"',
@@ -124,7 +124,7 @@ export const card5 = new Cards(
    from an API. By seamlessly amalgamating mathematics and motivational content,
    the project aims to infuse an element of enjoyment into the realm of math, enhancing the overall user experience.`,
   '"./images/card-images/math.png"',
-  ['MATHS', 'Lead Developer', '2023'],
+  ['MATHS', 'Front End', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','React','React-Router','API','HTML','CSS','Git','GitHub'],
   '"https://mathmagicians-4omq.onrender.com/"',
@@ -146,7 +146,7 @@ export const card6 = new Cards(
   engage through comments and reactions, enhancing the interactive dining experience.
   `,
   '"./images/card-images/kona.png"',
-  ['COMMERCE', 'Lead Developer', '2023'],
+  ['COMMERCE', 'Front End', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','API','Webpack','HTML','CSS','Git','GitHub'],
   '"https://david-lanzz.github.io/Kanban/dist/"',
@@ -172,7 +172,7 @@ export const card7 = new Cards(
    fostering a sense of competition and engagement within the gaming community.
   `,
   '"./images/card-images/leaderboard.png"',
-  ['SCORES', 'Lead Developer', '2023'],
+  ['SCORES', 'Front End', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','API','Webpack','HTML','CSS','Git','GitHub'],
   '"https://david-lanzz.github.io/Leaderboard-Project/dist/"',
@@ -191,7 +191,7 @@ export const card8 = new Cards(
   `UNDER CONSTRUCTION!.
   `,
   '"./images/card-images/commerce.png"',
-  ['COMMERCE', 'Lead Developer', '2023'],
+  ['COMMERCE', 'Full Stack', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['JavaScript','React','Redux','Vite','React Router','API','Git','GitHub','Figma'],
   '"https://myecommerceapp-1nbf.onrender.com/"',
@@ -213,7 +213,7 @@ export const card9 = new Cards(
    we aim to enhance the accessibility and comfort of healthcare services for users worldwide.
   `,
   '"./images/card-images/doc.png"',
-  ['HEALTH', 'Lead Developer', '2023'],
+  ['HEALTH', 'Full Stack', '2023'],
   ['"canopy"', '"bed"', '"year"'],
   ['Ruby on Rails','React','Redux','API','JavaScript','TailWindCSS','React Router','Git','GitHub'],
   '"https://reserve-me-a-doc.onrender.com/"',
