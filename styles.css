@@ -903,7 +903,8 @@ label {
   .projects {
     flex-direction: row;
     height: 28rem;
-    width: 63.5rem;
+    width: 97%;
+    max-width: 63.5rem;
     justify-content: space-between;
     padding: 0.7rem;
   }
