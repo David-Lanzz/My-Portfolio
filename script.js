@@ -161,7 +161,7 @@ const displayPopup = (array, target) => {
 
 <ul class="popup-info">
     <li class="popupParagraph">
-        <p id="popup-lorem">${element.popup.description}</p>
+        <p id="popup-lorem">${element.description}</p>
     </li>
     <li class="popuplang lang">
         <ul class="popuplang-ul popup-justify" id="popuplang">

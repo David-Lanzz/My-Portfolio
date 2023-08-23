@@ -149,7 +149,9 @@ nav {
 }
 
 .display-popup-desktop {
-  left: 14%;
+  top: 15%;
+  left: 64%;
+  transform: translate(-50%, -50%);
 }
 
 .popup-header a {
@@ -169,11 +171,8 @@ nav {
 
 .popup-header {
   justify-content: space-between;
-  height: 10%;
+  height: 7%;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 10px;
-  line-height: 25px;
 }
 
 .popup-header h2 {
@@ -831,7 +830,7 @@ label {
     background-image: url('./images/Header\ bg.svg');
     background-size: 95%;
     background-position: center 40%;
-    padding: 25% 18% 25% 18%;
+    padding: 25% 18% 35% 18%;
   }
 
   .logo {
@@ -904,7 +903,7 @@ label {
   .projects {
     flex-direction: row;
     height: 28rem;
-    width: 65rem;
+    width: 63.5rem;
     justify-content: space-between;
     padding: 0.7rem;
   }
