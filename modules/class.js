@@ -227,3 +227,32 @@ export const card9 = new Cards(
     stack3: '2023',
   },
 );
+
+
+class Language {
+  constructor(name,classname,image){
+ this.name = name;
+ this.classname = classname;
+ this.image = image;
+  }
+}
+
+export const lang1 = new Language('JavaScript','pLangs javaScript','../images/Ellipse 1 (1).png')
+export const lang2 = new Language('HTML', 'pLangs markup','../images/Ellipse 1 (2).png')
+export const lang3 = new Language('CSS','pLangs cascade','../images/Ellipse 1 (3).png')
+export const lang4 = new Language('Ruby','pLangs cascade','../images/ruby.jpg')
+export const lang5 = new Language('SQL','pLangs cascade','../images/sql.jpg')
+export const lang6 = new Language('Tailwind CSS','pLangs cascade','../images/tailwind.png')
+export const lang7 = new Language('TypeScript','pLangs javaScript','../images/typescript.png')
+export const lib1 = new Language('React','pLangs javaScript','../images/react.png')
+export const lib2 = new Language('Redux','pLangs javaScript','../images/redux.png')
+export const lib3 = new Language('React Router','pLangs javaScript','../images/router.png')
+export const lib4 = new Language('Vite','pLangs javaScript','../images/vite.jpg')
+export const lib5 = new Language('Ruby on Rails','pLangs javaScript','../images/ror.png')
+export const skill1 = new Language('Pair Programming','pLangs javaScript','../images/pair.png')
+export const skill2 = new Language('Communication','pLangs javaScript','../images/communication.jpg')
+export const skill3 = new Language('Git','pLangs javaScript','../images/git.png')
+export const skill4 = new Language('GitHub','pLangs javaScript','../images/github.png')
+export const skill5 = new Language('postgreSQL','pLangs javaScript','../images/postgre.png')
+export const skill6 = new Language('Time Management','pLangs javaScript','../images/time.png')
+export const skill7 = new Language('Leadership','pLangs javaScript','../images/leadership.jpg')

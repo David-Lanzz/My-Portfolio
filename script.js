@@ -10,6 +10,25 @@ import {
   card7,
   card8,
   card9,
+  lang1,
+  lang2,
+  lang3,
+  lang4,
+  lang5,
+  lang6,
+  lang7,
+  lib1,
+  lib2,
+  lib3,
+  lib4,
+  lib5,
+  skill1,
+  skill2,
+  skill3,
+  skill4,
+  skill5,
+  skill6,
+  skill7
 } from "./modules/class.js";
 
 const disappear = document.querySelector("#disappear");
@@ -76,6 +95,7 @@ menuList.addEventListener("click", (e) => {
 
 const works = document.querySelector("#works");
 
+
 const projectCards = [
   card9,
   card1,
@@ -87,6 +107,8 @@ const projectCards = [
   card7,
   card8,
 ];
+
+
 projectCards.map((card, index) => {
   card.id = index + 1;
   card.buttonId = index + 1;
@@ -133,6 +155,81 @@ function createCards() {
   }
 }
 createCards();
+
+const langsContainer = document.querySelector('#langs-dropdown1')
+
+const languages = [
+  lang1,
+  lang2,
+  lang3,
+  lang4,
+  lang5,
+  lang6,
+  lang7
+]
+const displayLanguages = ()=> {
+  let output = ''
+  for(let i = 0; i <= languages.length - 1;i++){
+    output+= `
+    <li class="${languages[i].classname}">
+    <img class="image" src="${languages[i].image}" alt="JavaScript logo"></img>
+    <h2>${languages[i].name}</h2>
+   </li>
+    `
+  }
+  langsContainer.innerHTML += output
+}
+
+displayLanguages()
+
+const libraries = [
+  lib1,
+  lib2,
+  lib3,
+  lib4,
+  lib5
+]
+const librariesContainer = document.querySelector('#framework-dropdown1')
+const displayFrameworks = ()=> {
+  let output = ''
+  for(let i = 0; i <= libraries.length - 1;i++){
+    output+= `
+    <li class="${libraries[i].classname}">
+    <img class="image" src="${libraries[i].image}" alt="JavaScript logo"></img>
+    <h2>${libraries[i].name}</h2>
+   </li>
+    `
+  }
+  librariesContainer.innerHTML += output
+}
+
+displayFrameworks()
+
+const skills = [
+  skill7,
+  skill1,
+  skill2,
+  skill3,
+  skill4,
+  skill5,
+  skill6
+]
+
+const skillsContainer = document.querySelector('#skills-dropdown')
+const displaySkills = ()=> {
+  let output = ''
+  for(let i = 0; i <= skills.length - 1;i++){
+    output+= `
+    <li class="${skills[i].classname}">
+    <img class="image" src="${skills[i].image}" alt="JavaScript logo"></img>
+    <h2>${skills[i].name}</h2>
+   </li>
+    `
+  }
+  skillsContainer.innerHTML += output
+}
+displaySkills()
+
 
 const displayPopup = (array, target) => {
   array.map((element) => {
@@ -215,13 +312,13 @@ window.addEventListener("click", (e) => {
       closeMenu();
     }
   }
-  if (target.id === "langs-dropdown" || target.id === "langs") {
+  if (target.id === "langs-dropdown" || target.id === "langs" || target.id === "langs-dropdown1") {
     document.querySelector(".plangsContainer").classList.toggle("move-away");
     document.querySelector(".v").classList.toggle("v-active");
-  } else if (target.id === "framework-dropdown" || target.id === "framework") {
+  } else if (target.id === "framework-dropdown" || target.id === "framework" || target.id === "framework-dropdown1") {
     document.querySelector(".frameworkContainer").classList.toggle("move-away");
     document.querySelector(".frame-v").classList.toggle("v-active");
-  } else if (target.id === "skills-dropdown" || target.id === "skills") {
+  } else if (target.id === "skills-dropdown" || target.id === "skills" || target.id === "skills-dropdown1") {
     document.querySelector(".skillsContainer").classList.toggle("move-away");
     document.querySelector(".skill-v").classList.toggle("v-active");
   }

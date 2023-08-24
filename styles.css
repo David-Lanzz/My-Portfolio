@@ -1057,13 +1057,14 @@ flex-direction: row;
 
   .popup-container {
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     gap: 1rem;
     margin-bottom: 1rem;
   }
 
   .window-popup {
     width: 58%;
+    transition: 0.3s;
     overflow: hidden;
   }
 
