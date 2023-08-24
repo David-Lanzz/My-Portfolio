@@ -239,20 +239,20 @@ class Language {
 }
 
 // languages creation
-export const lang1 = new Language('JavaScript','pLangs javaScript','../images/Ellipse 1 (1).png')
-export const lang2 = new Language('HTML', 'pLangs markup','../images/Ellipse 1 (2).png')
-export const lang3 = new Language('CSS','pLangs cascade','../images/Ellipse 1 (3).png')
-export const lang4 = new Language('Ruby','pLangs cascade','../images/ruby.jpg')
-export const lang5 = new Language('SQL','pLangs cascade','../images/sql.jpg')
-export const lang6 = new Language('Tailwind CSS','pLangs cascade','../images/tailwind.png')
-export const lang7 = new Language('TypeScript','pLangs javaScript','../images/typescript.png')
+export const lang1 = new Language('JavaScript','pLangs javaScript','./images/Ellipse 1 (1).png')
+export const lang2 = new Language('HTML', 'pLangs markup','./images/Ellipse 1 (2).png')
+export const lang3 = new Language('CSS','pLangs cascade','./images/Ellipse 1 (3).png')
+export const lang4 = new Language('Ruby','pLangs cascade','./images/ruby.jpg')
+export const lang5 = new Language('SQL','pLangs cascade','./images/sql.jpg')
+export const lang6 = new Language('Tailwind CSS','pLangs cascade','./images/tailwind.png')
+export const lang7 = new Language('TypeScript','pLangs javaScript','./images/typescript.png')
 
 // library/framework creation
-export const lib1 = new Language('React','pLangs javaScript','../images/react.png')
-export const lib2 = new Language('Redux','pLangs javaScript','../images/redux.png')
-export const lib3 = new Language('React Router','pLangs javaScript','../images/router.png')
-export const lib4 = new Language('Vite','pLangs javaScript','../images/vite.jpg')
-export const lib5 = new Language('Ruby on Rails','pLangs javaScript','../images/ror.png')
+export const lib1 = new Language('React','pLangs javaScript','./images/react.png')
+export const lib2 = new Language('Redux','pLangs javaScript','./images/redux.png')
+export const lib3 = new Language('React Router','pLangs javaScript','./images/router.png')
+export const lib4 = new Language('Vite','pLangs javaScript','./images/vite.jpg')
+export const lib5 = new Language('Ruby on Rails','pLangs javaScript','./images/ror.png')
 
 // skills creation
 export const skill1 = new Language('Pair Programming','pLangs javaScript','./images/pair.png')
