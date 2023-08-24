@@ -221,7 +221,7 @@ const displaySkills = ()=> {
   for(let i = 0; i <= skills.length - 1;i++){
     output+= `
     <li class="${skills[i].classname}">
-    <img class="image" src="${skills[i].image}" alt="JavaScript logo"></img>
+    <img class="image" src="${skills[i].image}" alt="${skills[i].name} logo"></img>
     <h2>${skills[i].name}</h2>
    </li>
     `
