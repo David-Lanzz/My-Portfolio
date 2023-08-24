@@ -164,7 +164,8 @@ const languages = [
   lang3,
   lang4,
   lang5,
-  lang6
+  lang6,
+  lang7
 ]
 const displayLanguages = ()=> {
   let output = ''
@@ -185,7 +186,8 @@ const libraries = [
   lib1,
   lib2,
   lib3,
-  lib4
+  lib4,
+  lib5
 ]
 const librariesContainer = document.querySelector('#framework-dropdown1')
 const displayFrameworks = ()=> {
