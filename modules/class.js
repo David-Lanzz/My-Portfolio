@@ -255,10 +255,10 @@ export const lib4 = new Language('Vite','pLangs javaScript','../images/vite.jpg'
 export const lib5 = new Language('Ruby on Rails','pLangs javaScript','../images/ror.png')
 
 // skills creation
-export const skill1 = new Language('Pair Programming','pLangs javaScript','../images/pair.png')
-export const skill2 = new Language('Communication','pLangs javaScript','../images/communication.jpg')
-export const skill3 = new Language('Git','pLangs javaScript','../images/git.png')
-export const skill4 = new Language('GitHub','pLangs javaScript','../images/github.png')
-export const skill5 = new Language('postgreSQL','pLangs javaScript','../images/postgre.png')
-export const skill6 = new Language('Time Management','pLangs javaScript','../images/time.png')
-export const skill7 = new Language('stuff','pLangs javaScript','images\bookstore.jpg')
+export const skill1 = new Language('Pair Programming','pLangs javaScript','./images/pair.png')
+export const skill2 = new Language('Communication','pLangs javaScript','./images/communication.jpg')
+export const skill3 = new Language('Git','pLangs javaScript','./images/git.png')
+export const skill4 = new Language('GitHub','pLangs javaScript','./images/github.png')
+export const skill5 = new Language('postgreSQL','pLangs javaScript','./images/postgre.png')
+export const skill6 = new Language('Time Management','pLangs javaScript','./images/time.png')
+export const skill7 = new Language('Leadership','pLangs javaScript','./images/leadership.jpg')
