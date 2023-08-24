@@ -160,12 +160,13 @@ const langsContainer = document.querySelector('#langs-dropdown1')
 
 const languages = [
   lang1,
-  lang2,
-  lang3,
+  lang7,
+  lang6,
   lang4,
   lang5,
-  lang6,
-  lang7
+  lang2,
+  lang3,
+
 ]
 const displayLanguages = ()=> {
   let output = ''
