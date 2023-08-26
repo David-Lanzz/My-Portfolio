@@ -166,18 +166,19 @@ const languages = [
   lang5,
   lang2,
   lang3,
-
 ]
 const displayLanguages = ()=> {
   let output = ''
+  console.log(output)
   for(let i = 0; i <= languages.length - 1;i++){
-    output+= `
+    output += `
     <li class="${languages[i].classname}">
     <img class="image" src="${languages[i].image}" alt="${languages[i].name} logo"></img>
     <h2>${languages[i].name}</h2>
    </li>
     `
   }
+  console.log(output)
   langsContainer.innerHTML += output
 }
 

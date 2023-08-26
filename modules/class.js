@@ -127,7 +127,7 @@ export const card5 = new Cards(
   '"./images/card-images/math.png"',
   ['MATHS', 'Front End', '2023'],
   ['"canopy"', '"bed"', '"year"'],
-  ['JavaScript','React','CSS','React-Router','API','HTML','Git','GitHub'],
+  ['JavaScript','React','API','CSS','React-Router','HTML','Git','GitHub'],
   '"https://mathmagicians-4omq.onrender.com/"',
   '"https://github.com/David-Lanzz/math-magicians/"',
   {
