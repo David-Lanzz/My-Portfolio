@@ -1002,6 +1002,7 @@ label {
     background-color: #f0f0f0;
     color: #172b4d;
     flex: 0 0 100%;
+    margin: 0;
   }
 
   .recommendation p {
