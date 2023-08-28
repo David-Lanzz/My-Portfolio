@@ -29,6 +29,9 @@ import {
   skill5,
   skill6,
   skill7,
+  school1,
+  school2,
+  school3
 } from "./modules/class.js";
 
 const disappear = document.querySelector("#disappear");
@@ -73,10 +76,10 @@ const closeMenu = () => {
   disappear.style.display = "block";
   rotateRight.style.transform = "rotate(0deg) translateX(0%) translateY(0%)";
   rotateLeft.style.transform = "rotate(0deg) translateX(0%)";
-  rotateRight.style.backgroundColor = "#6070ff";
-  rotateLeft.style.backgroundColor = "#6070ff";
-  rotateRight.style.borderColor = "#6070ff";
-  rotateLeft.style.borderColor = "#6070ff";
+  rotateRight.style.backgroundColor = "#30466c";
+  rotateLeft.style.backgroundColor = "#30466c";
+  rotateRight.style.borderColor = "#30466c";
+  rotateLeft.style.borderColor = "#30466c";
 };
 
 menuList.addEventListener("click", (e) => {
@@ -208,6 +211,23 @@ const displaySkills = () => {
 };
 displaySkills();
 
+const schools = [school1, school2, school3];
+
+const educationContainer = document.querySelector("#education-dropdown");
+const displayEducation = () => {
+  let output = "";
+  for (let i = 0; i <= schools.length - 1; i++) {
+    output += `
+    <li class="${schools[i].classname}">
+    <img class="image" src= "${schools[i].image}" alt="${schools[i].name} logo"></img>
+    <h2>${schools[i].name}</h2>
+   </li>
+    `;
+  }
+  educationContainer.innerHTML += output;
+};
+displayEducation();
+
 const displayPopup = (array, target) => {
   array.map((element) => {
     if (target.id.toString() === element.id.toString()) {
@@ -311,13 +331,23 @@ window.addEventListener("click", (e) => {
     document.querySelector(".skillsContainer").classList.toggle("move-away");
     document.querySelector(".skill-v").classList.toggle("v-active");
   }
+    else if (
+    target.id === "education-dropdown" ||
+    target.id === "education" ||
+    target.id === "education-dropdown1"
+  ) {
+    document.querySelector(".educationContainer").classList.toggle("move-away");
+    document.querySelector(".education-v").classList.toggle("v-active");
+  }
   if (
     target.id === "langs-dropdown" ||
     target.id === "langs" ||
     target.id === "framework-dropdown" ||
     target.id === "framework" ||
     target.id === "skills-dropdown" ||
-    target.id === "skills"
+    target.id === "skills" ||
+    target.id === "education" ||
+    target.id === "education-dropdown"
   ) {
     if (
       document
@@ -328,6 +358,9 @@ window.addEventListener("click", (e) => {
         .classList.contains("move-away") === false ||
       document
         .querySelector(".skillsContainer")
+        .classList.contains("move-away") === false ||
+      document
+        .querySelector(".educationContainer")
         .classList.contains("move-away") === false
     ) {
       document.querySelector(".lanzz").style.display = "none";
@@ -340,6 +373,9 @@ window.addEventListener("click", (e) => {
         .classList.contains("move-away") === true ||
       document
         .querySelector(".skillsContainer")
+        .classList.contains("move-away") === true ||
+      document
+        .querySelector(".educationContainer")
         .classList.contains("move-away") === true
     ) {
       document.querySelector(".lanzz").style.display = "block";

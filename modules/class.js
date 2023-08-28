@@ -262,3 +262,7 @@ export const skill4 = new Language('GitHub','pLangs javaScript','./images/github
 export const skill5 = new Language('postgreSQL','pLangs javaScript','./images/postgre.png')
 export const skill6 = new Language('Time Management','pLangs javaScript','./images/time.png')
 export const skill7 = new Language('Leadership','pLangs javaScript','./images/leadership.jpg')
+
+export const school1 = new Language('<b>The Federal University of Technology Akure</b> "(Industrial and Production Engineering)"','pLangs javaScript',"./images/recommendation-images/education-images/futa.jpg")
+export const school2 = new Language('<b>Microverse</b> "(Remote FullStack Software Development)"','pLangs javaScript',"./images/recommendation-images/education-images/microverse.png")
+export const school3 = new Language('<b>The Polytechnic of Ibadan</b> "(Mechanical Engineering)"','pLangs javaScript',"./images/recommendation-images/education-images/poly.jpg")

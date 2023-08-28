@@ -251,7 +251,7 @@ header {
 .menuList {
   width: 100%;
   height: 100vh;
-  background: #6070ff;
+  background: #30466c;
   padding: 4rem 2rem;
   transition: 0.5s;
   position: inherit;
@@ -283,12 +283,12 @@ header {
 } */
 
 .menu a div {
-  border: 1px solid #6070ff;
+  border: 1px solid #30466c;
   width: 20px;
   height: 3px;
   margin: 3px;
   border-radius: 10%;
-  background-color: #6070ff;
+  background-color: #30466c;
 }
 
 .main-section {
@@ -659,7 +659,7 @@ h1 {
 
 .recAndAchiev {
   width: 100%;
-  min-height: 100vh;
+  min-height: 20rem;
   background-color: #dedfe1;
   display: grid;
   padding: 1rem;
@@ -1063,6 +1063,12 @@ label {
   }
 
   .skillsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .educationContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
