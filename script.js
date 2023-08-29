@@ -31,7 +31,7 @@ import {
   skill7,
   school1,
   school2,
-  school3
+  school3,
 } from "./modules/class.js";
 
 const disappear = document.querySelector("#disappear");
@@ -86,7 +86,9 @@ menuList.addEventListener("click", (e) => {
   if (
     e.target.id === "menuButton1" ||
     e.target.id === "menuButton2" ||
-    e.target.id === "menuButton3"
+    e.target.id === "menuButton3" ||
+    e.target.id === "menuButton4" ||
+    e.target.id === "menuButton5"
   ) {
     document.querySelector("body").classList.remove("no-overflow");
     for (let i = 0; i < tryme.length; i++) {
@@ -330,8 +332,7 @@ window.addEventListener("click", (e) => {
   ) {
     document.querySelector(".skillsContainer").classList.toggle("move-away");
     document.querySelector(".skill-v").classList.toggle("v-active");
-  }
-    else if (
+  } else if (
     target.id === "education-dropdown" ||
     target.id === "education" ||
     target.id === "education-dropdown1"
@@ -450,3 +451,28 @@ document.addEventListener("DOMContentLoaded", function () {
   recContainers.forEach(scrollRec);
 });
 
+const textElement = document.getElementById("text");
+
+const textsToType = [
+  `As a Full Stack Software Developer, I embody innovation, problem-solving, and precision in my code. A collaborative team player, I thrive on continuous learning, contribute to open-source projects, and stay updated with the latest tech trends. With a keen eye for detail, I embrace code reviews and approach challenges with enthusiasm. My holistic approach shapes me into a versatile and passionate developer.`,
+];
+
+let textIndex = 0;
+let charIndex = 0;
+
+function typeText() {
+  if (textIndex < textsToType.length) {
+      const currentText = textsToType[textIndex];
+      if (charIndex < currentText.length) {
+          textElement.textContent += currentText.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeText, 10);
+      } else {
+          textIndex++;
+          charIndex = 0;
+          setTimeout(typeText, 500);
+      }
+  }
+}
+
+typeText();

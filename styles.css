@@ -148,6 +148,11 @@ nav {
   left: 4%;
 }
 
+.typewriter {
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
 .display-popup-desktop {
   top: 15%;
   left: 70%;
@@ -358,6 +363,10 @@ h1 {
   color: #7f8cff;
 }
 
+.lc:visited {
+  color: #7f8cff;
+}
+
 .icons {
   margin-top: 1rem;
   width: 10rem;
@@ -558,8 +567,8 @@ h1 {
 
 .aboutInfo p {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 14px;
   line-height: 24px;
   color: #344563;
 }
@@ -593,7 +602,7 @@ h1 {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #000;
+  color: #001F3F;
 }
 
 .pLangs {
@@ -934,7 +943,7 @@ label {
 
   @keyframes bigger {
     to {
-      font-size: 150%;
+      transform: scale(1.2);
     }
   }
 
@@ -945,7 +954,7 @@ label {
   }
 
   .main-section p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 28px;
     margin-bottom: 1.5rem;
   }
@@ -974,6 +983,10 @@ label {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .about-icons {
+    margin: 0;
   }
 
   .recContainer h2 {
@@ -1022,10 +1035,6 @@ label {
   .achievement img {
    border-radius: 2rem;
    width: 100%;
-  }
-
-  .icons {
-    margin-top: -0.6rem;
   }
 
   .works {
@@ -1090,7 +1099,7 @@ flex-direction: row;
   }
 
   .lanzz img {
-    width: 16rem;
+    width: 15rem;
    height: 25rem;
   }
 
